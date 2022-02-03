@@ -1,6 +1,7 @@
 package com.mc.main;
 
 import com.mc.main.procedural.ArraysPractice;
+import com.mc.main.procedural.VariablesPractice;
 
 public class Runner {
 	
