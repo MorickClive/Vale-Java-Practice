@@ -102,5 +102,4 @@ public class VariablesPracticeUnitTEST {
 		classObject = null;
 	}
 	
-	
 }

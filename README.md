@@ -8,7 +8,7 @@ java techniques and keywords.
 
 The topics that'll be covered are:
 - [X] Variables
-- [ ] Arrays
+- [X] Arrays
 - [ ] Operations (BIDMAS, Modulus)
 - [ ] Conditionals (if, switch-case, ternary bitwise)
 - [ ] Iteration/Loop(for, for-each, while, do-while)

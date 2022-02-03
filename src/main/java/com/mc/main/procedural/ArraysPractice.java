@@ -132,11 +132,11 @@ public class ArraysPractice {
 		
 	}
 
-	public static int[] createPrimativeIntegerArray(int arraySize) {
+	protected static int[] createPrimativeIntegerArray(int arraySize) {
 		return new int[arraySize];
 	}
 	
-	public static int[] createPrimativeIntegerArray(int... contents) {
+	protected static int[] createPrimativeIntegerArray(int... contents) {
 		int[] x = new int[contents.length];
 		
 		for(int y = 0; y < contents.length; y++) {
@@ -146,7 +146,7 @@ public class ArraysPractice {
 		return x;
 	}
 	
-	public static List<Integer> createIntegerList(int arraySize) {
+	protected static List<Integer> createIntegerList(int arraySize) {
 		List<Integer> list = new ArrayList<Integer>();
 		
 		// Observe Topic of Iteration to explore the 'for' keyword
