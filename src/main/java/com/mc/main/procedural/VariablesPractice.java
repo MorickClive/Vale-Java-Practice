@@ -19,6 +19,10 @@ public class VariablesPractice {
 	private static boolean myBool;
 	private static char myChar;
 	
+	private VariablesPractice() {
+		super();
+	};
+	
 	public static void start() {
 		// An application in Java runs from the top of a scope ('{') - methodically, 
 		// line by line until it hits the end scope line ('}') of a method.
@@ -157,8 +161,14 @@ public class VariablesPractice {
 	protected static float defaultFloat() {
 		return myFloat;
 	}	
-	private static double defaultDouble() {
+	protected static double defaultDouble() {
 		return myDouble;
+	}	
+	protected static boolean defaultBool() {
+		return myBool;
+	}	
+	protected static char defaultChar() {
+		return myChar;
 	}
 	
 	// below is an example of casting
