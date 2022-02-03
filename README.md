@@ -2,19 +2,25 @@
 
 The objective of this practice is to cover a basic set of Java techniques, this will include some OOP techniques and potentially some Lambda expressions.
 
+This project may include excessive comments, this is purely as a reflection of recollection and refreshing of
+each concept explored. Tasks will include more programmatic driven solutions rather than an exploration of
+java techniques and keywords.
+
 The topics that'll be covered are:
 - [X] Variables
-- [ ] Arrays
+- [X] Arrays
 - [ ] Operations (BIDMAS, Modulus)
 - [ ] Conditionals (if, switch-case, ternary bitwise)
 - [ ] Iteration/Loop(for, for-each, while, do-while)
 	- [ ] try, try-catch, try-finally
 - [ ] OOP/Classes
-  - [ ] Encapsulation
-  - [ ] Inheritance
-  - [ ] Polymorphism
-  - [ ] Abstraction
-- [ ] Enumeration
+  - [ ] Wrapper classes
+  - [ ] Object-Oriented Programming Principles:
+     - [ ] Encapsulation
+     - [ ] Inheritance
+     - [ ] Polymorphism
+     - [ ] Abstraction
+   - [ ] Enumeration
 - [ ] Streams/Lambdas
   - [ ] map
   - [ ] filter
