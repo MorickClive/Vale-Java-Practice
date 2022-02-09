@@ -20,6 +20,7 @@ public class Runner {
 	 * of understanding of coding principles.
 	 */
 	public static void main(String[] args) {
+		// A simple print to console method
 		System.out.println("HELLO WORLD");
 		
 		VariablesPractice.start();
