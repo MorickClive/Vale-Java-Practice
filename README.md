@@ -8,11 +8,12 @@ java techniques and keywords.
 
 The topics that'll be covered are:
 - [X] Variables
+- [X] Methods
 - [X] Arrays
 - [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
-- [ ] Conditionals (if, switch-case, ternary bitwise)
+- [X] Conditionals (if, switch-case, ternary bitwise)
 - [ ] Iteration/Loop(for, for-each, while, do-while)
-	- [ ] try, try-catch, try-finally
+- [ ] Exceptions: try, try-catch, try-finally
 - [ ] OOP/Classes
   - [ ] Wrapper classes
   - [ ] Object-Oriented Programming Principles:
