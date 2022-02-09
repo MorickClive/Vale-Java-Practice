@@ -9,7 +9,10 @@ public class ArraysPractice {
 
 	// This topic may cover concepts within the classes/object-oriented topics
 	public static void start() {
+		// Primitive data 
 		primativeArrays();
+
+		// Class initialised Arrays
 		wrapperArrays();
 	}
 
@@ -88,10 +91,11 @@ public class ArraysPractice {
 	}
 
 	// Topics explored here are covered with respect to object-oriented topics
+	// You may wish to refer to WrapperClasses Practice.
 	private static void wrapperArrays() {
 		
 		// It is advisable to investigate Wrapper objects to gain a full appreciate of the dynamics
-		// of Wrapper Objects that represent primative data types.
+		// of Wrapper Objects that represent primitive data types.
 		
 		// Whilst all declarations of primitives in java are inherently understood,
 		// arrays are actually translated to a simplified object structure

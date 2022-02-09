@@ -131,7 +131,7 @@ public class OperatorsPractice {
 		return x + y;
 	}
 	protected static float subtraction(float x, float y) {
-		return x + y;
+		return x - y;
 	}
 	protected static float multiplication(float x, float y) {
 		return x * y;

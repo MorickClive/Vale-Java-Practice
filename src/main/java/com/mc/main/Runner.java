@@ -26,4 +26,7 @@ public class Runner {
 		ArraysPractice.start();
 		OperatorsPractice.start();
 	}
+	
+	// We don't want to create an instance of this class
+	private Runner() { super(); }
 }
