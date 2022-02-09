@@ -30,11 +30,11 @@ public class VariablesPractice {
 		// instructions are performed which have meaning to Java and are typically terminated by a semi colon.
 		// the instruction below is refering to a method stated within the scope of this class('VariablesPractice')
 		// methods are usually self contained groups of instructions that can be refered to as "part of" or "within a" class.
-		init();
+		variableDeclarations();
 	}
 	
 	// Primitives
-	private static void init() {
+	private static void variableDeclarations() {
 		// Primitive variables in Java are data types that are inherently understood by Java to store values within a memory range
 		// variables may vary in memory size due to the respective bits assigned to that data type.
 		// primitives in Java comprise of: byte, short, int, long, float, double, boolean and char
