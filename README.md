@@ -6,6 +6,8 @@ This project may include excessive comments, this is purely as a reflection of r
 each concept explored. Tasks will include more programmatic driven solutions rather than an exploration of
 java techniques and keywords.
 
+Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-JavaBasics-Practice/network)
+
 The topics that'll be covered are:
 - [X] Variables
 - [X] Methods
