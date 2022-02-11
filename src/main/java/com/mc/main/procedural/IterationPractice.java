@@ -107,7 +107,7 @@ public class IterationPractice {
 		// As part of the condition, we can use the length of the array
 		// and increment a variable to represent the index of the array.
 		// using that variable to check whether we've reached the end of the array.
-		for (int x = 0; x < listArray.length - 1; x++) {
+		for (int x = 0; x < listArray.length; x++) {
 			System.out.println("Array[" + x + "] value: " + listArray[x]);
 		}
 
@@ -205,7 +205,7 @@ public class IterationPractice {
 	protected static float sumForLoop(float[] array) {
 		float result = 0;
 		
-		for(int x = 0; x < array.length - 1 ; x++) {
+		for(int x = 0; x < array.length; x++) {
 			result += array[x];
 		}
 		
@@ -244,6 +244,6 @@ public class IterationPractice {
 			index++;
 		} while(index < array.length);
 		
-		return 0;
+		return result;
 	}
 }
