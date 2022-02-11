@@ -14,7 +14,7 @@ The topics that'll be covered are:
 - [X] Arrays
 - [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
 - [X] Conditionals (if, switch-case, ternary bitwise)
-- [ ] Iteration/Loop(for, for-each, while, do-while)
+- [X] Iteration/Loop(for, for-each, while, do-while)
 - [ ] Exceptions: try, try-catch, try-finally
 - [ ] OOP/Classes
   - [ ] Wrapper classes

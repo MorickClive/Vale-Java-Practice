@@ -72,14 +72,14 @@ public class ArraysPractice {
 		// So if we can store values in an array, how do we extract or assign a value to
 		// the array
 		// well we can use the square brackets on the variable to specify the array
-		// position
+		// position, this is usually referred to as the "array index".
 		// HOWEVER, array positions begin at position 0 and reach the size of the array,
 		// with
 		// consideration from a starting position meaning the final position is
 		// typically the
 		// size -1.
 
-		// so if we wanted to find the 3rd value in the array labelled 'y'
+		// So if we wanted to find the 3rd value in the array labelled 'y'
 		// we can do the following:
 		System.out.println(y[2]);
 
