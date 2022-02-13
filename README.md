@@ -1,4 +1,4 @@
-# Vale-JavaBasics-Practice
+# Vale-Java-Practice
 
 The objective of this practice is to cover a basic set of Java techniques, this will include some OOP techniques and potentially some Lambda expressions.
 
