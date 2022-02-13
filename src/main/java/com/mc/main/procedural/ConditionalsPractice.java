@@ -110,7 +110,7 @@ public class ConditionalsPractice {
 		}
 
 		if (5 < 2) {
-			System.out.println("5 is less than 2"); // will not run, causing a warning
+			System.out.println("5 is less than 2"); // will not run, causing a compile warning
 		}
 		
 		// <= - less than or equals to
@@ -126,14 +126,17 @@ public class ConditionalsPractice {
 			System.out.println("5 is equal to 5");
 		}
 		
+		// compar Operator: !=
+		// ========================================
 		// In some cases, we want to check anything but a certain case
 		// in this regard we can use the not equals comparator
-		// !=
 		if(2 != 5) {
 			System.out.println("2 is not 5"); // this will run
 		}
 		
-		// The "NOT" operator; typically this would be covered in the OperatorsPractice
+		// Logic Operator: ! - NOT
+		// ========================================
+		// The 'NOT' operator; typically this would be covered in the OperatorsPractice
 		// however there is a operator that we can apply to booleans that inverts their meaning.
 		// because I'm covering conditionals, its application has a more meaningful demonstration.
 		
@@ -158,6 +161,36 @@ public class ConditionalsPractice {
 			// as false.
 			System.out.println("");
 		}
+		
+		// Keyword: instanceof
+		// ========================================
+		// For this section, you might want to look up Object-Oriented Programming section
+		// for classes
+		//
+		// Sometimes we want to see if the data value matches the data type, this typically
+		// is associated more with inheritance and confirming one data type is in fact
+		// the data type you are storing. To appreciate this, check out Abstraction and Polymorphism.
+		//
+		String message = "sample";
+		
+		if(message instanceof String) {
+			System.out.println("The message variable is of [String.class] Type");
+		} else {
+			System.out.println("The message variable is Not of [String.class] Type");
+		}
+		
+		// Ternary Bitwise:  '? : '
+		// ========================================
+		// in some cases we might want to set a variable based on a conditional
+		// circumstances, we could write it using the if-else keywords.
+		// Alternatively we can use a bitwise operation which handles logic on a binary level
+		
+		String result = "The message variable is ";
+		
+		// As we can see below, we can use the structure of:
+		// (condition) ? (if true, return this) : (if false, return this);
+		// this is known as a ternary bitwise operation.
+		result += message instanceof String ?  "of [String.class] Type" : "of [String.class] Type" ;
 	}
 	
 	// Example method for comparators, relational operators
