@@ -28,7 +28,7 @@ The topics that'll be covered are:
    - [ ] Enumeration
    
 - [ ] Advanced Java:
-	- [ ] Exceptions: try, try-catch, try-finally
+	- [X] Exceptions: try, try-catch, try-finally
 	- [ ] File In/Out
 	
 - [ ] JAVA 8:
