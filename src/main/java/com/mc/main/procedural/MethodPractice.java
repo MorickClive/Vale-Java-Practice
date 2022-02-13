@@ -15,7 +15,7 @@ public class MethodPractice {
 	// have one entry point for running it.
 	// ~: it's important to remember that the "public static void main()" method is uniquely
 	//	  understood by java
-	public static void sampleMethod() {
+	public static void start() {
 		// a method usually defined within the scope "{" "}" of a class
 		// a method is comprised of 
 		// an "accessor" - "public" - others will be covered in classes - Encapsulation
