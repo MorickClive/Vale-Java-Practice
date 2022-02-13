@@ -7,7 +7,7 @@ public class MethodPracticeUnitTEST {
 	@Test
 	public void test() {
 		MethodPractice.main(null);
-		MethodPractice.sampleMethod();
+		MethodPractice.start();
 		MethodPractice.variableExample();
 	}
 

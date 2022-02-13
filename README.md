@@ -9,14 +9,16 @@ java techniques and keywords.
 Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-JavaBasics-Practice/network)
 
 The topics that'll be covered are:
-- [X] Variables
-- [X] Methods
-- [X] Arrays
-- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
-- [X] Conditionals (if, switch-case, ternary bitwise)
-- [X] Iteration/Loop(for, for-each, while, do-while)
-- [ ] Exceptions: try, try-catch, try-finally
-- [ ] OOP/Classes
+- [ ] Java Basics:
+	- [X] Variables
+	- [X] Methods
+	- [X] Arrays
+	- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
+	- [X] Conditionals (if, switch-case, ternary bitwise)
+	- [X] Iteration/Loop(for, for-each, while, do-while)
+	- [	] Strings
+	
+- [ ] Object-Oriented Programming 
   - [ ] Wrapper classes
   - [ ] Object-Oriented Programming Principles:
      - [ ] Encapsulation
@@ -24,13 +26,19 @@ The topics that'll be covered are:
      - [ ] Polymorphism
      - [ ] Abstraction
    - [ ] Enumeration
-- [ ] Streams/Lambdas
-  - [ ] map
-  - [ ] filter
-  - [ ] sorted
-  - [ ] collect
-  - [ ] forEach
-  - [ ] reduce
+   
+- [ ] Advanced Java:
+	- [X] Exceptions: try, try-catch, try-finally
+	- [ ] File In/Out
+	
+- [ ] JAVA 8:
+	- [ ] Streams/Lambdas
+	  - [ ] map
+	  - [ ] filter
+	  - [ ] sorted
+	  - [ ] collect
+	  - [ ] forEach
+	  - [ ] reduce
 
 Additional topics may be incorporated, the repo should follow a developer-branch(also know as feature-branch)
    model.
