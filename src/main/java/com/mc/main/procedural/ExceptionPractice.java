@@ -181,7 +181,7 @@ public class ExceptionPractice {
 		// After the throws keyword is used, you can use commas to add additional
 		// types of Exceptions to warn developers of the exceptions this method might
 		// potentially encounter.
-		System.out.println(message);
+		System.out.println(message.contains("2"));
 	}
 	
 	// Keyword: throw
