@@ -2,6 +2,7 @@ package com.mc.main;
 
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.OperatorsPractice;
+import com.mc.main.procedural.Application;
 import com.mc.main.procedural.VariablesPractice;
 
 public class Runner {
@@ -22,10 +23,13 @@ public class Runner {
 	public static void main(String[] args) {
 		// A simple print to console method
 		System.out.println("HELLO WORLD");
+
+		Application.PROCEDURAL.run();
+		Application.OOP.run();
+		Application.ADVANCED.run();
+		Application.JAVA8.run();
 		
-		VariablesPractice.start();
-		ArraysPractice.start();
-		OperatorsPractice.start();
+		System.out.println("Application ENDS");
 	}
 	
 	// We don't want to create an instance of this class
