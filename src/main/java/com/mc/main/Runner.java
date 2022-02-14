@@ -1,9 +1,7 @@
 package com.mc.main;
 
-import com.mc.main.procedural.ArraysPractice;
-import com.mc.main.procedural.OperatorsPractice;
 import com.mc.main.procedural.Application;
-import com.mc.main.procedural.VariablesPractice;
+import com.mc.main.procedural.StringPractice;
 
 public class Runner {
 	

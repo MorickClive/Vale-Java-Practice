@@ -16,7 +16,7 @@ The topics that'll be covered are:
 	- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
 	- [X] Conditionals (if, switch-case, ternary bitwise)
 	- [X] Iteration/Loop(for, for-each, while, do-while)
-	- [	] Strings
+	- [X] Strings
 	
 - [ ] Object-Oriented Programming 
   - [ ] Wrapper classes
