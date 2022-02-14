@@ -5,14 +5,6 @@ package com.mc.main.procedural;
 * each value can use a run method to execute that
 * particular group of instructions.
 * 
-* Available apps:
-* <ul>
-* 	<li>PROCEDURAL</li>
-* 	<li>OOP</li>
-* 	<li>ADVANCED</li>
-* 	<li>JAVA8</li>
-* </ul>
-* 
 * @author MorickClive
 */
 public enum Application {
@@ -57,6 +49,9 @@ public enum Application {
 				System.out.println("An error has occured, please seek available cases.");
 				break;
 		}
+		
+		// View Runner.java, seeing how this code works
+		// Enums will be covered in OOP.
 	}
 
 }

@@ -13,7 +13,7 @@ public class ArraysPractice {
 		// Class initialised Arrays
 		wrapperArrays();
 		
-		// Please move onto OperatorsPractice.java
+		// Next: OperatorsPractice.java
 	}
 
 	// This topic explores the basics of java arrays

@@ -3,6 +3,7 @@ package com.mc.main;
 import com.mc.main.procedural.Application;
 import com.mc.main.procedural.StringPractice;
 
+// Find FlowControlPractice.java to start!
 public class Runner {
 	
 	/**
@@ -10,21 +11,27 @@ public class Runner {
 	 * comments here are to express awareness of java coding concepts as well as the depth
 	 * of understanding of coding principles.</p>
 	 * 
+	 * <p>This project will read like a guide, exploring topics and moving
+	 * onward to new concepts</p>
+	 * 
 	 * @param args - a list of parameters that can be passed during command prompt execution
 	 * @author MorickClive
 	 */
 	public static void main(String[] args) {
 		// A simple print function, outputting to console
 		System.out.println("HELLO WORLD");
-
-		Application.PROCEDURAL.run();
-		Application.OOP.run();
-		Application.ADVANCED.run();
-		Application.JAVA8.run();
+		
+		// Continued:
+		start();
 		
 		System.out.println("Application ENDS");
 	}
 	
-	/** We don't want to create an instance of this class */
-	private Runner() { super(); }
+	protected static void start() {
+		Application.PROCEDURAL.run();
+		Application.OOP.run();
+		Application.ADVANCED.run();
+		Application.JAVA8.run();
+	}
+	
 }

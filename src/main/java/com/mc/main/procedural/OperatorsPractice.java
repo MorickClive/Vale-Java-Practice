@@ -9,7 +9,7 @@ public class OperatorsPractice {
 		// Operations that are associated with variable control
 		assignmentOps();
 		
-		// Please move onto ConditionalsPractice.java
+		// Next: ConditionalsPractice.java
 	}
 	
 	// In the below example we can observe how we can control numeric data

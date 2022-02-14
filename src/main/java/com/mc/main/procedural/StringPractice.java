@@ -16,6 +16,8 @@ public class StringPractice {
 		// there are some data types that are considered more complex.
 		//stringComparision();
 		stringMethods();
+		
+		// Next: Explore Application.java
 	}
 	
 	protected static void stringComparision() {

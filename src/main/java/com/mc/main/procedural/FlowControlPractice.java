@@ -6,10 +6,10 @@ public class FlowControlPractice {
 	// !!! READ THIS FIRST !!!
 	public static void flowOfControl() {
 		// Java code always runs within methods within a class
-		// as you can see above we are in `public static void flowOfControl() { }`
+		// as you can see above we are in `public static void flowOfControl() { }`.
 		// 
-		// but what does that mean?
-		// well all methods have the following structure:
+		// But what does that mean?
+		// Well all methods have the following structure:
 		// 'accessor - "public"',
 		// 'static context - "static"', 
 		// 'return type - "void"', 
