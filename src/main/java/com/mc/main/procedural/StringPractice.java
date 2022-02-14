@@ -5,6 +5,7 @@ public class StringPractice {
 	private static String message;
 	private static char letter;
 	
+	/** We don't want to create an instance of this class */
 	private StringPractice() { super();	}
 	
 	public static void start() {
@@ -15,6 +16,8 @@ public class StringPractice {
 		// there are some data types that are considered more complex.
 		//stringComparision();
 		stringMethods();
+		
+		// Next: Explore Application.java
 	}
 	
 	protected static void stringComparision() {

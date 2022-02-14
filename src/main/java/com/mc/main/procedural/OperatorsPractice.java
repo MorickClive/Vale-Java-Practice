@@ -2,14 +2,14 @@ package com.mc.main.procedural;
 
 public class OperatorsPractice {
 	
-	private OperatorsPractice() { super(); }
-	
 	public static void start() {		
 		// Operations that are associated with standard mathematical operations
 		arithmeticOps();
 		
 		// Operations that are associated with variable control
 		assignmentOps();
+		
+		// Next: ConditionalsPractice.java
 	}
 	
 	// In the below example we can observe how we can control numeric data
@@ -142,8 +142,11 @@ public class OperatorsPractice {
 	protected static float modulus(float x, float y) {
 		return x % y;
 	}
+	
 	// incremental operations
 	protected static float incrementPositive(float x) {	return ++x;	}
 	protected static float incrementNegative(float x) {	return --x;	}
 	
+	/** We don't want to create an instance of this class */
+	private OperatorsPractice() { super(); }
 }

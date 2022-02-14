@@ -12,6 +12,7 @@ The topics that'll be covered are:
 - [ ] Java Basics:
 	- [X] Variables
 	- [X] Methods
+	- [X] Flow & Control
 	- [X] Arrays
 	- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
 	- [X] Conditionals (if, switch-case, ternary bitwise)
