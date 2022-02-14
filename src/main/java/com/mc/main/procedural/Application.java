@@ -19,7 +19,7 @@ public enum Application {
 				OperatorsPractice.start();
 				ConditionalsPractice.start();
 				IterationPractice.start();
-				
+				StringPractice.start();
 				break;
 				
 			case OOP:
