@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArraysPractice {
-	
-	private ArraysPractice() { super(); }
 
 	// This topic may cover concepts within the classes/object-oriented topics
 	public static void start() {
@@ -14,6 +12,8 @@ public class ArraysPractice {
 
 		// Class initialised Arrays
 		wrapperArrays();
+		
+		// Next: OperatorsPractice.java
 	}
 
 	// This topic explores the basics of java arrays
@@ -110,7 +110,7 @@ public class ArraysPractice {
 		System.out.println("The number of item in the array 'x' is: " + x.length);
 		
 		// Unfortunately once you've declared the array with a size, it remains fixed unless replaced with
-		// an entirely new java object to represent a new array when using primative data types.
+		// an entirely new java object to represent a new array when using primitive data types.
 		// As such java has implemented an Object representation of an Array with enhanced capabilities.
 		// the Object in question would be an ArrayList, with inheritance to the Collection interface.
 		// An ArrayList can use the new keyword to initialise the object.
@@ -159,4 +159,8 @@ public class ArraysPractice {
 		}
 		return list;
 	}
+	
+	/** We don't want to create an instance of this class */
+	private ArraysPractice() { super(); }
+
 }

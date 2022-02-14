@@ -2,39 +2,16 @@ package com.mc.main.procedural;
 
 public class VariablesPractice {
 	
-	// Variables can also be declared in the class scope
-	// their appropriate name is then referred to as an "attribute"
-	// this is because this variable is tracking something relating to this class
-	// or holds some importance to the class it is contained with
-	// ========================================
-	// attributes are assigned default values if left uninitialised, each data type has its own default value
-	// that is usually equal to the zero equivalent value.
-	// ========================================
-	private static byte myByte;
-	private static short myShort;
-	private static int myInt;
-	private static long myLong;
-	private static float myFloat;
-	private static double myDouble;
-	private static boolean myBool;
-	private static char myChar;
-	
-	private VariablesPractice() {
-		super();
-	};
-	
 	public static void start() {
-		// An application in Java runs from the top of a scope ('{') - methodically, 
-		// line by line until it hits the end scope line ('}') of a method.
-		
-		// instructions are performed which have meaning to Java and are typically terminated by a semi colon.
-		// the instruction below is refering to a method stated within the scope of this class('VariablesPractice')
-		// methods are usually self contained groups of instructions that can be refered to as "part of" or "within a" class.
+		// Explores the usage an importance of variables
 		variableDeclarations();
+		
+		// Please move to MethodPractice.java
+		// exploring its `main()` method and moving onto its `start()` method.
 	}
 	
 	// Primitives
-	private static void variableDeclarations() {
+	protected static void variableDeclarations() {
 		// Primitive variables in Java are data types that are inherently understood by Java to store values within a memory range
 		// variables may vary in memory size due to the respective bits assigned to that data type.
 		// primitives in Java comprise of: byte, short, int, long, float, double, boolean and char
@@ -115,6 +92,29 @@ public class VariablesPractice {
 		z = 0;
 		x = y = z;
 		
+		// NOTE
+		// ========================================
+		// Something to note is that scope is highly important to a variable
+		// a variable is generally understood by the scope it belongs to
+		// so for example, we could have a variable called "int x;" in this method
+		// and a "int x" in a separate method!
+		// 
+		// Both variables are only meaningful in the context of that method's scope!
+		//
+		// "Well then", you might be thinking - what happens if you put a variable
+		// in a class scope!
+		// In this case, the variable is visible to all other methods!
+		//
+		// This next bit is useful, but relates more to classes - which we will explore
+		// later:
+		// Variables in a class scope we call an attribute, this is
+		// because it belongs to the class - it is considered a quality of that class
+		// and important to all the methods it can perform; this is why all methods would
+		// share that variable and respect its value.
+		
+		
+		// EXTRA DETAILS:
+		// ========================================
 		// Additional String Information
 		// ========================================
 		// Strings can be declared like variables in Java as there is a specially memory management tool that
@@ -204,6 +204,25 @@ public class VariablesPractice {
 		//	  a double `10.0`
 		return (float)doubleVal;
 	}
+	
+	// Variables can also be declared in the class scope
+	// their appropriate name is then referred to as an "attribute"
+	// this is because this variable is tracking something relating to this class
+	// or holds some importance to the class it is contained with.
+	// ========================================
+	// Attributes are assigned default values if left uninitialised, each data type has its own default value
+	// that is usually equal to the zero equivalent value.
+	// As such they provide easy to access default values!
+	// ========================================
+	private static byte myByte;
+	private static short myShort;
+	private static int myInt;
+	private static long myLong;
+	private static float myFloat;
+	private static double myDouble;
+	private static boolean myBool;
+	private static char myChar;
 
-	// Arrays will be covered in a separate class for clarity purposes
+	/** We don't want to create an instance of this class */
+	private VariablesPractice() { super();	};
 }

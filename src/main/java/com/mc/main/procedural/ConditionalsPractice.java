@@ -2,8 +2,6 @@ package com.mc.main.procedural;
 
 public class ConditionalsPractice {
 
-	private ConditionalsPractice() { super(); }
-
 	// When an application
 	public static void start() {
 		// Exploration of if, else, else-if and comparators
@@ -12,6 +10,8 @@ public class ConditionalsPractice {
 		switchCase();
 		// Exploration of comparator control
 		logicalOperators();
+		
+		// Next: IterationPractice.java
 	}
 
 	// if statements
@@ -305,4 +305,7 @@ public class ConditionalsPractice {
 			System.out.println("An action hasn't been performed!");
 		}
 	}
+
+	/** We don't want to create an instance of this class */
+	private ConditionalsPractice() { super(); }
 }

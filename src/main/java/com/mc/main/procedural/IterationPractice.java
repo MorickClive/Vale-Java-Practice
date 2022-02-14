@@ -2,6 +2,7 @@ package com.mc.main.procedural;
 
 public class IterationPractice {
 	
+	/** We don't want to create an instance of this class */
 	private IterationPractice() { super(); }
 
 	public static void start() {
@@ -32,6 +33,8 @@ public class IterationPractice {
 		// Extras are considerations and keywords that provide additional control
 		// to using loops
 		extras();
+		
+		// Next: StringPractice.java
 	}
 
 	protected static void whileLoops() {
