@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class ExceptionPractice {
 	
+	/** We don't want to create an instance of this class */
 	private ExceptionPractice() { super();	}
 	
 	public static void start() {

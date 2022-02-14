@@ -2,6 +2,7 @@ package com.mc.main.procedural;
 
 public class IterationPractice {
 	
+	/** We don't want to create an instance of this class */
 	private IterationPractice() { super(); }
 
 	public static void start() {

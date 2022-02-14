@@ -2,6 +2,7 @@ package com.mc.main.procedural;
 
 public class ConditionalsPractice {
 
+	/** We don't want to create an instance of this class */
 	private ConditionalsPractice() { super(); }
 
 	// When an application

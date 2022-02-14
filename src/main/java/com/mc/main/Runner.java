@@ -5,21 +5,16 @@ import com.mc.main.procedural.StringPractice;
 
 public class Runner {
 	
-	// the '//' symbol combination can be used to inform java to ignore instruction on the line
-	// that come after its usage. It is particularly useful to write comments on code.
-	// however comments are considered bad practice in the software industry.
-	
-	/*
-	 * Multi-lined comments such as this also allow a block of code to be ignored.
-	 * again, coding should primarily express itself clearly, writing comments means that
-	 * there is a level of complexity that should be simplified.
+	/**
+	 * <p>This project is a refresher of Java coding for `Alan Davies`, 
+	 * comments here are to express awareness of java coding concepts as well as the depth
+	 * of understanding of coding principles.</p>
 	 * 
-	 * This project is a refresher of Java coding for `Alan Davies`, comments 
-	 * here are to express awareness of java coding concepts as well as the depth
-	 * of understanding of coding principles.
+	 * @param args - a list of parameters that can be passed during command prompt execution
+	 * @author MorickClive
 	 */
 	public static void main(String[] args) {
-		// A simple print to console method
+		// A simple print function, outputting to console
 		System.out.println("HELLO WORLD");
 
 		Application.PROCEDURAL.run();
@@ -30,6 +25,6 @@ public class Runner {
 		System.out.println("Application ENDS");
 	}
 	
-	// We don't want to create an instance of this class
+	/** We don't want to create an instance of this class */
 	private Runner() { super(); }
 }
