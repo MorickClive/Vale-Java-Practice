@@ -1,4 +1,15 @@
-package com.mc.main.procedural;
+package com.mc.main;
+
+import com.mc.main.oop.ClassApp;
+import com.mc.main.procedural.ArraysPractice;
+import com.mc.main.procedural.ConditionalsPractice;
+import com.mc.main.procedural.ExceptionPractice;
+import com.mc.main.procedural.FlowControlPractice;
+import com.mc.main.procedural.IterationPractice;
+import com.mc.main.procedural.MethodPractice;
+import com.mc.main.procedural.OperatorsPractice;
+import com.mc.main.procedural.StringPractice;
+import com.mc.main.procedural.VariablesPractice;
 
 /**
 * Provides a series of applications as values
@@ -36,6 +47,7 @@ public enum Application {
 				break;
 				
 			case OOP:
+				ClassApp.start();
 				break;
 				
 			case ADVANCED:
