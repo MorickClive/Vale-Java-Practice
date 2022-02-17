@@ -8,6 +8,10 @@ java techniques and keywords.
 
 Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Java-Practice/network)
 
+## ACTIVE PROJECT PHASE: VALE
+
+### Topics to Cover:
+
 The topics that'll be covered are:
 - [ ] Java Basics:
 	- [X] Variables
@@ -41,9 +45,7 @@ The topics that'll be covered are:
 
 ---
 
-## Java Version Techniques
-
----
+## Java Version Features
 
 ### ACTIVE PROJECT PHASE: VALE
 
@@ -78,6 +80,7 @@ The topics that'll be covered are:
 	- [ ] JDBC
 	
 <details> <summary> Java 9 (Projects:STRONGHOLD, BASTION) </summary>
+
 - [ ] Java 9 (Projects:STRONGHOLD, BASTION):
  	- [ ] Private Interface Methods
 	- [ ] Try-With Resources
@@ -87,14 +90,18 @@ The topics that'll be covered are:
 	- [ ] Java Modules
 	- [ ] Stream Improvements
 	- [X] Underscore: '_' is a keyword
+	
 </details>
 
 <details> <summary> Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
+
 - [ ] Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
 	- [ ] Optional .orElseThrow()
+	
 </details>
 
 <details> <summary> Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
+
 - [ ] Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
 	- [ ] String Methods
 		- [ ] isBlank
@@ -108,6 +115,7 @@ The topics that'll be covered are:
 	- [X] Java file execution
 	- [ ] Predicate "Not" method
 	- [ ] Lambda Local variables
+	
 </details>
 
 Additional topics may be incorporated, the repo should follow a developer-branch(also know as feature-branch)
