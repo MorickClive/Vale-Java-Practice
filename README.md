@@ -45,8 +45,9 @@ The topics that'll be covered are:
 
 ---
 
+### ACTIVE PROJECT PHASE: VALE
 
-- JAVA 4/5
+- [ ] JAVA 4/5
 	- [X] For-Each loops
 	- [X] VarArgs
 	- [ ] Static import
@@ -55,7 +56,7 @@ The topics that'll be covered are:
 	- [ ] Annotations
 	- [ ] Generics
 	
-- JAVA 7
+- [ ] JAVA 7
 	- [ ] (String enabled) Switch-Case
 	- [ ] Multi-catch (multi block or type divide '|')
 	- [ ] Type Inference
@@ -76,8 +77,9 @@ The topics that'll be covered are:
 	- [ ] Default methods
 	- [ ] JDBC
 	
+<details> <summary> Java 9 (Projects:STRONGHOLD, BASTION) </summary>
 - [ ] Java 9 (Projects:STRONGHOLD, BASTION):
-	- [ ] Private Interface Methods
+ 	- [ ] Private Interface Methods
 	- [ ] Try-With Resources
 	- [ ] Anonymous Classes
 	- [ ] Safe Varargs annotations
@@ -85,10 +87,14 @@ The topics that'll be covered are:
 	- [ ] Java Modules
 	- [ ] Stream Improvements
 	- [X] Underscore: '_' is a keyword
-	
-- [ ] Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM)/;
+</details>
+
+<details> <summary> Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
+- [ ] Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
 	- [ ] Optional .orElseThrow()
-	
+</details>
+
+<details> <summary> Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
 - [ ] Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
 	- [ ] String Methods
 		- [ ] isBlank
@@ -102,7 +108,8 @@ The topics that'll be covered are:
 	- [X] Java file execution
 	- [ ] Predicate "Not" method
 	- [ ] Lambda Local variables
-	
+</details>
+
 Additional topics may be incorporated, the repo should follow a developer-branch(also know as feature-branch)
    model.
    
