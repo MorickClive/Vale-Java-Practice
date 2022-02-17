@@ -6,7 +6,7 @@ This project may include excessive comments, this is purely as a reflection of r
 each concept explored. Tasks will include more programmatic driven solutions rather than an exploration of
 java techniques and keywords.
 
-Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-JavaBasics-Practice/network)
+Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Java-Practice/network)
 
 The topics that'll be covered are:
 - [ ] Java Basics:
@@ -20,6 +20,7 @@ The topics that'll be covered are:
 	- [X] Strings
 	
 - [ ] Object-Oriented Programming 
+  - [X] Class practices
   - [ ] Wrapper classes
   - [ ] Object-Oriented Programming Principles:
      - [ ] Encapsulation
@@ -27,26 +28,87 @@ The topics that'll be covered are:
      - [ ] Polymorphism
      - [ ] Abstraction
    - [ ] Enumeration
+   - [ ] Generics
    
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
 	- [ ] File In/Out
+	- [ ] Java Pattern/Regular Expression
+	- [ ] Design Patterns
+	- [ ] S.O.L.I.D.
+	- [ ] MultiThreading
+	- [ ] Reflection
+
+---
+
+## Java Version Techniques
+
+---
+
+
+- JAVA 4/5
+	- [X] For-Each loops
+	- [X] VarArgs
+	- [ ] Static import
+	- [ ] Enumeration
+	- [ ] AutoBoxing (Wrapper Classes, type inference)
+	- [ ] Annotations
+	- [ ] Generics
 	
-- [ ] JAVA 8:
+- JAVA 7
+	- [ ] (String enabled) Switch-Case
+	- [ ] Multi-catch (multi block or type divide '|')
+	- [ ] Type Inference
+	
+- [ ] JAVA 8 (Projects: VALE, PASS):
+	- [ ] Functional Interface
 	- [ ] Streams/Lambdas
+	  - [ ] Collectors
 	  - [ ] map
 	  - [ ] filter
+	  - [ ] forEach
 	  - [ ] sorted
 	  - [ ] collect
-	  - [ ] forEach
 	  - [ ] reduce
-
+	- [ ] Date & Time
+	- [ ] Base-64 en/decoding
+	- [ ] Method references
+	- [ ] Default methods
+	- [ ] JDBC
+	
+- [ ] Java 9 (Projects:STRONGHOLD, BASTION):
+	- [ ] Private Interface Methods
+	- [ ] Try-With Resources
+	- [ ] Anonymous Classes
+	- [ ] Safe Varargs annotations
+	- [ ] Factory Methods (Set, List, Map; .of(x, y, z))
+	- [ ] Java Modules
+	- [ ] Stream Improvements
+	- [X] Underscore: '_' is a keyword
+	
+- [ ] Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM)/;
+	- [ ] Optional .orElseThrow()
+	
+- [ ] Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
+	- [ ] String Methods
+		- [ ] isBlank
+		- [ ] lines
+		- [ ] strip
+		- [ ] stripLeading
+		- [ ] stripTrailing
+		- [ ] repeat
+	- [ ] File Methods:
+	- [ ] Collection to Array
+	- [X] Java file execution
+	- [ ] Predicate "Not" method
+	- [ ] Lambda Local variables
+	
 Additional topics may be incorporated, the repo should follow a developer-branch(also know as feature-branch)
    model.
    
 ---
 
 Some additional topics might include:
-- Tasks to complete
-- A basic java-maven application
-- Unit testing with Junit
+- [ ] Tasks to complete
+- [X] A basic java-maven application.
+- [X] Unit testing with Junit.

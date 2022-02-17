@@ -1,7 +1,5 @@
 package com.mc.main;
 
-import com.mc.main.procedural.StringPractice;
-
 // Find FlowControlPractice.java to start!
 public class Runner {
 	
