@@ -1,6 +1,7 @@
 package com.mc.main;
 
 import com.mc.main.oop.ClassApp;
+import com.mc.main.oop.WrapperClass;
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.ConditionalsPractice;
 import com.mc.main.procedural.ExceptionPractice;
@@ -48,6 +49,7 @@ public enum Application {
 				
 			case OOP:
 				ClassApp.start();
+				WrapperClass.start();
 				break;
 				
 			case ADVANCED:
