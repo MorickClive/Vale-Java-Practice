@@ -61,7 +61,11 @@ public class ExceptionPractice {
 			// appears in the console to aid debugging.
 			// we can use a method from the exception class to print out
 			// the standard stack trace message ourselves.
-			e.printStackTrace();
+			System.out.print(e);
+			// Alternatively we could use this:
+			// e.printStackTrace();
+			// however we will avoid this because of parallel execution.
+			// and we do not have a logger library.
 		}
 		
 		// try-catch-finally
@@ -81,7 +85,7 @@ public class ExceptionPractice {
 			// Activate a connection to a server - null for demo
 			activeConnection = DriverManager.getConnection("");
 		} catch(Exception e) {
-			e.printStackTrace();
+			System.out.print(e);
 		} finally {
 			System.out.println("Always run this");
 			// in this case, the active connection has a close method that can
@@ -100,7 +104,7 @@ public class ExceptionPractice {
 				// thus we can catch that specific exception type
 				// if it throws more than one type of Exception, it maybe
 				// more appropriate to use a more generic Exception.
-				e.printStackTrace();
+				System.out.print(e);
 			}
 		}
 		
@@ -132,7 +136,7 @@ public class ExceptionPractice {
 			// after this try-catch block, you could add the close method invocation
 			// in a finally block
 		}catch(Exception e) {
-			e.printStackTrace();
+			System.out.print(e);
 		}
 		
 		// try-finally
@@ -154,14 +158,14 @@ public class ExceptionPractice {
 		try {
 			genericException(null);
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.print(e);
 		}
 		
 		// throw-throws example
 		try {
 		explicitNumericException(0);
 		}catch (Exception e) {
-			e.printStackTrace();
+			System.out.print(e);
 		}
 
 	}
