@@ -39,6 +39,7 @@ The topics that'll be covered are:
 	- [ ] File In/Out
 	- [ ] Java Pattern/Regular Expression
 	- [ ] Design Patterns
+	- [ ] Annotations
 	- [ ] S.O.L.I.D.
 	- [ ] MultiThreading
 	- [ ] Reflection
@@ -54,7 +55,7 @@ The topics that'll be covered are:
 	- [X] VarArgs
 	- [ ] Static import
 	- [ ] Enumeration
-	- [ ] AutoBoxing (Wrapper Classes, type inference)
+	- [X] AutoBoxing (Wrapper Classes, type inference)
 	- [ ] Annotations
 	- [ ] Generics
 	
