@@ -48,11 +48,37 @@ public class WrapperClass {
 		// name, as we've seen with int/Integer.
 		System.out.println("12.5f as a hex value: " + Float.toHexString(12.5f));
 		
+		// Available primiative to wrapper classes can be seen below:
+		// boolean		-> Boolean
+		// byte			-> Byte
+		// char			-> Character
+		// float		-> Float
+		// int			-> Integer
+		// long			-> Long
+		// short		-> Short
+		// double		-> Double
+		
 	}
 	
 	private static void autoBoxing() {
-		// As of Java 9, using the new keyword with 
+		// As of Java 9, using the new keyword with object types has been considered
+		// deprecated, this has instead been replaced with a more performance efficient
+		// factory method: '.valueOf(int x)'
+		Integer.valueOf(12);
 		
+		// However as far back as java 1.5 we had access to autoboxing
+		// a technique that the java compiler uses to infer a primitive type
+		// to a wrapper class during initialisation:
+		Double myDouble = 12.50D;
+		
+		// In cases where we want to extract a primitive value from a Wrapper class
+		// we can use the a process referred to as "unboxing".
+		// Extracting the value out from the class object.
+		double myPrimitiveDouble = myDouble.doubleValue();
+		
+		// we can also simply provide a direct assignment, the compiler will
+		// understand that unboxing is needed when reversing the process.
+		myPrimitiveDouble = myDouble;
 	}
 	
 	/** We don't want to create instances of this class! */
