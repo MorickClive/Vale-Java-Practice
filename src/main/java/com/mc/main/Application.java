@@ -2,6 +2,7 @@ package com.mc.main;
 
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
+import com.mc.main.oop.principles.EncapsulationPractice;
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.ConditionalsPractice;
 import com.mc.main.procedural.ExceptionPractice;
@@ -35,6 +36,11 @@ public enum Application {
 	* grouping instruction methods to execute
 	*/
 	public void run() {
+		
+		String div = "=".repeat(40);
+		
+		System.out.println( this.name() + "\n" + div );
+		
 		switch(this) {
 			case PROCEDURAL:
 				VariablesPractice.start();
@@ -50,6 +56,7 @@ public enum Application {
 			case OOP:
 				ClassApp.start();
 				WrapperClass.start();
+				EncapsulationPractice.start();
 				break;
 				
 			case ADVANCED:
@@ -63,6 +70,8 @@ public enum Application {
 				System.out.println("An error has occured, please seek available cases.");
 				break;
 		}
+		
+		System.out.println(div + String.format("\nEND of %s\n", this.name()) + div + "\n");
 		
 		// View Runner.java, seeing how this code works
 		// Enums will be covered in OOP.
