@@ -27,8 +27,8 @@ public class Runner {
 	protected static void start() {
 		Application.PROCEDURAL.run();
 		Application.OOP.run();
-		Application.ADVANCED.run();
-		Application.JAVA8.run();
+		//Application.ADVANCED.run();
+		//Application.JAVA8.run();
 	}
 	
 }
