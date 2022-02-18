@@ -19,7 +19,7 @@ public class EncapsulationAdvanced {
 	private EncapsulationAdvanced() { super();	}
 	
 	public static void start() {
-		Employee example = new Employee("Alex", "£xx.xxxx", "Software Engineer");
+		Employee example = new Employee("Alex", "£xx,xxxx", "Software Engineer");
 		
 		System.out.println(example);
 	}
