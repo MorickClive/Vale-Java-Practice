@@ -29,7 +29,7 @@ The topics that'll be covered are:
   - [ ] Object-Oriented Programming Principles:
      - [X] Encapsulation
      - [X] Inheritance
-     - [ ] Polymorphism
+     - [X] Polymorphism
      - [ ] Abstraction
    - [ ] Enumeration
    - [ ] Generics
