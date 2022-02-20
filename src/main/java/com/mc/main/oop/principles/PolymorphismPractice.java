@@ -13,7 +13,7 @@ public class PolymorphismPractice {
 
 	
 	public static void start() {
-		// Polymorphism is a principle of oop design, the idea that one class
+		// Polymorphism is a principle of OOP design, the idea that one class
 		// maybe represented in many different way. Haven't we already done that with
 		// inheritance though?
 		//

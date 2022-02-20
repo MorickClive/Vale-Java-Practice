@@ -104,7 +104,7 @@ public class CompactDiskUnitTest {
 	
 	@Test
 	public void hashCodeTest() {
-		assertEquals(-703321898, testCD.hashCode());
+		assertEquals(-1228657555, testCD.hashCode());
 	}
 	
 	@Test
@@ -118,7 +118,7 @@ public class CompactDiskUnitTest {
 	public void hashCode_Failure2_Test() {
 		testCD.setReadOnly(false);
 		
-		assertEquals(-703321892, testCD.hashCode());
+		assertEquals(-1228657549, testCD.hashCode());
 	}
 
 }
