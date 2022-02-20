@@ -107,7 +107,7 @@ public class Book extends Media {
 
 	@Override
 	public String toString() {
-		return ", genre=" + genre + ", pageCount=" + pageCount + "]";
+		return super.toString() + ", genre=" + genre + ", pageCount=" + pageCount + "]";
 	}
 
 	@Override
@@ -115,8 +115,6 @@ public class Book extends Media {
 		if (this == obj)
 			return true;
 		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
 			return false;
 		Book other = (Book) obj;
 		if (genre == null) {
@@ -127,6 +125,6 @@ public class Book extends Media {
 		if (pageCount != other.pageCount)
 			return false;
 		return true;
-	}
+	}	
 
 }

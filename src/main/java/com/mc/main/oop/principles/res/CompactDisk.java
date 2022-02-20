@@ -67,8 +67,9 @@ public class CompactDisk extends Media /* Example of an 'is-a' relationship */{
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+		int result = super.hashCode();
 		result = prime * result + ((app == null) ? 0 : app.hashCode());
+		result = prime * result + (isReadOnly ? 1231 : 1237);
 		return result;
 	}
 
@@ -76,19 +77,19 @@ public class CompactDisk extends Media /* Example of an 'is-a' relationship */{
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
+		if (!super.equals(obj))
 			return false;
 		CompactDisk other = (CompactDisk) obj;
 		if (app != other.app)
+			return false;
+		if (isReadOnly != other.isReadOnly)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return ", app=" + app + ", isReadOnly=" + isReadOnly + "]";
+		return super.toString() + ", app=" + app + ", isReadOnly=" + isReadOnly + "]";
 	}
 
 
