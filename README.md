@@ -28,7 +28,7 @@ The topics that'll be covered are:
   - [X] Wrapper classes
   - [ ] Object-Oriented Programming Principles:
      - [X] Encapsulation
-     - [ ] Inheritance
+     - [X] Inheritance
      - [ ] Polymorphism
      - [ ] Abstraction
    - [ ] Enumeration
