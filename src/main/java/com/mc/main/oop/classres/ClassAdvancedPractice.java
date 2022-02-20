@@ -43,7 +43,7 @@ public class ClassAdvancedPractice {
 		// id comes from the global definition and set in this local instance.
 		//
 		// The local instance will always have a fixed id
-		// the global definition/instance will always increment id that is refered to by
+		// the global definition/instance will always increment id that is referred to by
 		// local instances.
 	}	
 	

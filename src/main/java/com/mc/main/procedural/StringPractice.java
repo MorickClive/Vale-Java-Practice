@@ -18,6 +18,8 @@ public class StringPractice {
 		stringMethods();
 		
 		// Next: Explore Application.java
+		
+		//TODO: add escape & control character examples!
 	}
 	
 	protected static void stringComparision() {
