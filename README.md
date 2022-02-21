@@ -26,13 +26,13 @@ The topics that'll be covered are:
 - [ ] Object-Oriented Programming 
   - [X] Class practices
   - [X] Wrapper classes
-  - [ ] Object-Oriented Programming Principles:
+  - [X] Object-Oriented Programming Principles:
      - [X] Encapsulation
      - [X] Inheritance
      - [X] Polymorphism
      - [X] Abstraction
-   - [ ] Enumeration
-   - [ ] Generics
+   - [X] Enumeration
+   - [X] Generics
    
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
