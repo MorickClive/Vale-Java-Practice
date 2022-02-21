@@ -1,6 +1,6 @@
 package com.mc.main.oop.principles;
 
-import com.mc.main.oop.principles.res.Book;
+import com.mc.main.oop.principles.res.inherit.Book;
 
 public class InheritancePractice {
 	

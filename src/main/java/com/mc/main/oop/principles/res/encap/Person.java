@@ -1,4 +1,4 @@
-package com.mc.main.oop.principles.res;
+package com.mc.main.oop.principles.res.encap;
 
 /** 
  * This is an example for the Encapsulation principle of Object-Oriented Practices!

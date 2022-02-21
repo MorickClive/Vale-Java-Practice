@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.mc.main.oop.principles.res.Book;
+import com.mc.main.oop.principles.res.inherit.Book;
 
 public class InheritancePracticeUnitTest {
 	

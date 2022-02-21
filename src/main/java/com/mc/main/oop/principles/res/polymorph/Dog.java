@@ -1,4 +1,4 @@
-package com.mc.main.oop.principles.res;
+package com.mc.main.oop.principles.res.polymorph;
 
 /**
  * 
