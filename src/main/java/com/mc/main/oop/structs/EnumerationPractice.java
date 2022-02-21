@@ -47,6 +47,11 @@ public class EnumerationPractice {
 			case NEPTUNE:
 			default:
 		}
+		
+		// Now that we've covered enums, check out the Application class that is used
+		// to reference chunks of this project.
+		// It allows the execution of set activities/practices based on a switch-case scenario
+		// that groups certain topics together!
 	}
 	
 	// Enums, or Enumerated values can be defined like a class, but instead of the
