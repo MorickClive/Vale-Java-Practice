@@ -2,6 +2,7 @@ package com.mc.main;
 
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
+import com.mc.main.oop.principles.AbstractionPractice;
 import com.mc.main.oop.principles.EncapsulationPractice;
 import com.mc.main.oop.principles.InheritancePractice;
 import com.mc.main.oop.principles.PolymorphismPractice;
@@ -61,6 +62,7 @@ public enum Application {
 				EncapsulationPractice.start();
 				InheritancePractice.start();
 				PolymorphismPractice.start();
+				AbstractionPractice.start();
 				break;
 				
 			case ADVANCED:

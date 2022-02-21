@@ -1,10 +1,13 @@
-package com.mc.main.oop.principles.res;
+package com.mc.main.oop.principles.res.inherit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.mc.main.oop.principles.res.inherit.Book;
+import com.mc.main.oop.principles.res.inherit.Media;
 
 public class BookUnitTEST {
 	

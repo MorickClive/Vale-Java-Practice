@@ -1,4 +1,4 @@
-package com.mc.main.oop.principles.res;
+package com.mc.main.oop.principles.res.inherit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.mc.main.Application;
+import com.mc.main.oop.principles.res.inherit.CompactDisk;
+import com.mc.main.oop.principles.res.inherit.Media;
 
 public class CompactDiskUnitTest {
 	
