@@ -106,21 +106,26 @@ public class CompactDiskUnitTest {
 	
 	@Test
 	public void hashCodeTest() {
-		assertEquals(-1228657555, testCD.hashCode());
+		CompactDisk compare = new CompactDisk("Example Book Title","Alex", "20/02/2022", Application.PROCEDURAL, true);
+		
+		assertEquals(compare.hashCode(), testCD.hashCode());
 	}
 	
 	@Test
 	public void hashCode_Failure1_Test() {
+		CompactDisk compare = new CompactDisk("Example Book Title","Alex", "20/02/2022", null, true);
 		testCD.setApp(null);
 		
-		assertEquals(-230605431, testCD.hashCode());
+		assertEquals(compare.hashCode(), testCD.hashCode());
 	}
 	
 	@Test
 	public void hashCode_Failure2_Test() {
+		CompactDisk compare = new CompactDisk("Example Book Title","Alex", "20/02/2022", Application.PROCEDURAL, false);
+		
 		testCD.setReadOnly(false);
 		
-		assertEquals(-1228657549, testCD.hashCode());
+		assertEquals(compare.hashCode(), testCD.hashCode());
 	}
 
 }

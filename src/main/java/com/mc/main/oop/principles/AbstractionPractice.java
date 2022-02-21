@@ -59,10 +59,14 @@ public class AbstractionPractice {
 				// Because we've cast bird as a FlyingBird we gain access
 				// to its interface - and fly!
 				//
-				// Even though we are looping through a list of Birds!
-				((FlyingBird) bird).fly();
+				// Even though we are looping through a list of Birds!				
+				flyingBird = (FlyingBird) bird; // let's store it for convenience!
 				
-				flyingBird = (FlyingBird) bird; // let's cast and store it for convenience!
+				if(flyingBird.isFlying()) {
+					flyingBird.land();
+				} else {
+					flyingBird.fly();
+				}
 				
 				System.out.println("\t-" + flyingBird.getSpecies() + (
 						flyingBird.isFlying() ? 
