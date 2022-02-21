@@ -2,7 +2,10 @@ package com.mc.main;
 
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
+import com.mc.main.oop.principles.AbstractionPractice;
 import com.mc.main.oop.principles.EncapsulationPractice;
+import com.mc.main.oop.principles.InheritancePractice;
+import com.mc.main.oop.principles.PolymorphismPractice;
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.ConditionalsPractice;
 import com.mc.main.procedural.ExceptionPractice;
@@ -57,6 +60,9 @@ public enum Application {
 				ClassApp.start();
 				WrapperClass.start();
 				EncapsulationPractice.start();
+				InheritancePractice.start();
+				PolymorphismPractice.start();
+				AbstractionPractice.start();
 				break;
 				
 			case ADVANCED:

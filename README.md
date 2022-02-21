@@ -28,20 +28,20 @@ The topics that'll be covered are:
   - [X] Wrapper classes
   - [ ] Object-Oriented Programming Principles:
      - [X] Encapsulation
-     - [ ] Inheritance
-     - [ ] Polymorphism
-     - [ ] Abstraction
+     - [X] Inheritance
+     - [X] Polymorphism
+     - [X] Abstraction
    - [ ] Enumeration
    - [ ] Generics
    
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
+	- [ ] Design Patterns
+	- [ ] S.O.L.I.D.
+	- [ ] Annotations
 	- [ ] File In/Out
 	- [ ] Java Pattern/Regular Expression
-	- [ ] Design Patterns
-	- [ ] Annotations
-	- [ ] S.O.L.I.D.
-	- [ ] MultiThreading
+	- [ ] Multi-Threading
 	- [ ] Reflection
 
 ---
