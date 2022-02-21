@@ -1,7 +1,7 @@
 package com.mc.main.oop.principles;
 
 import com.mc.main.oop.principles.res.EncapsulationAdvanced;
-import com.mc.main.oop.principles.res.Person;
+import com.mc.main.oop.principles.res.encap.Person;
 
 public class EncapsulationPractice {
 	

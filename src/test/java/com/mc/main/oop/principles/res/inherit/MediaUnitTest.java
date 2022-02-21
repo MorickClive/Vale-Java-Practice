@@ -1,4 +1,4 @@
-package com.mc.main.oop.principles.res;
+package com.mc.main.oop.principles.res.inherit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
