@@ -6,6 +6,8 @@ import com.mc.main.oop.principles.AbstractionPractice;
 import com.mc.main.oop.principles.EncapsulationPractice;
 import com.mc.main.oop.principles.InheritancePractice;
 import com.mc.main.oop.principles.PolymorphismPractice;
+import com.mc.main.oop.structs.EnumerationPractice;
+import com.mc.main.oop.structs.GenericsPractice;
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.ConditionalsPractice;
 import com.mc.main.procedural.ExceptionPractice;
@@ -67,6 +69,8 @@ public enum Application {
 				
 			case ADVANCED:
 				ExceptionPractice.start();
+				EnumerationPractice.start();
+				GenericsPractice.start();
 				break;
 				
 			case JAVA8:
