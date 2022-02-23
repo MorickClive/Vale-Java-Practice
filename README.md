@@ -37,11 +37,20 @@ The topics that'll be covered are:
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
 	- [ ] Design Patterns
+		- [ ] Creational
+			- [ ] Builder Pattern
+			- [ ] Singleton
+		- [ ] Structural
+			- [ ] Decorator Pattern
+			- [ ] Adapter Pattern
+		- [ ] Behavioural
+			- [ ] Observer Pattern
+			- [ ] Iterator Pattern
 	- [ ] S.O.L.I.D.
 	- [ ] Annotations
 	- [ ] File In/Out
 	- [ ] Java Pattern/Regular Expression
-	- [ ] Multi-Threading
+	- [ ] Multithreading
 	- [ ] Reflection
 
 ---

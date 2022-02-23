@@ -6,12 +6,14 @@ import java.util.List;
 import com.mc.main.oop.principles.res.abstraction.Bird;
 import com.mc.main.oop.principles.res.abstraction.Penguin;
 import com.mc.main.oop.principles.res.abstraction.Seagul;
+import com.mc.main.util.Practice;
 
-public class GenericsPractice {
+public class GenericsPractice extends Practice {
 	
 	private GenericsPractice() { super(); }
 	
 	public static void start() {
+		printHeader("Generics");
 		// Observe the nested generic "Cage" below
 		// return here to observe how a generic allows us to expand our type restrictions.
 		// We can also limit interaction with a stored generic attribute!

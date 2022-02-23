@@ -1,5 +1,7 @@
 package com.mc.main;
 
+import com.mc.main.advanced.ExceptionPractice;
+import com.mc.main.advanced.designpatterns.DesignPatternPractice;
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
 import com.mc.main.oop.principles.AbstractionPractice;
@@ -10,7 +12,6 @@ import com.mc.main.oop.structs.EnumerationPractice;
 import com.mc.main.oop.structs.GenericsPractice;
 import com.mc.main.procedural.ArraysPractice;
 import com.mc.main.procedural.ConditionalsPractice;
-import com.mc.main.procedural.ExceptionPractice;
 import com.mc.main.procedural.FlowControlPractice;
 import com.mc.main.procedural.IterationPractice;
 import com.mc.main.procedural.MethodPractice;
@@ -71,6 +72,7 @@ public enum Application {
 				ExceptionPractice.start();
 				EnumerationPractice.start();
 				GenericsPractice.start();
+				DesignPatternPractice.start();
 				break;
 				
 			case JAVA8:
