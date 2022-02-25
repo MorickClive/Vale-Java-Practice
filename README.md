@@ -39,11 +39,11 @@ The topics that'll be covered are:
 	- [ ] Scanners:
 	- [ ] Design Patterns
 		- [ ] Creational
-			- [ ] Builder Pattern
-			- [ ] Singleton
+			- [X] Builder Pattern
+			- [X] Singleton
 		- [ ] Structural
-			- [ ] Decorator Pattern
-			- [ ] Adapter Pattern
+			- [X] Decorator Pattern
+			- [X] Adapter Pattern
 		- [ ] Behavioural
 			- [ ] Observer Pattern
 			- [ ] Iterator Pattern
