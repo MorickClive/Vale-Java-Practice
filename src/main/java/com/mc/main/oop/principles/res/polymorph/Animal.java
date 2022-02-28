@@ -63,6 +63,6 @@ public class Animal {
 	public void setPosition(int x, int y) {
 		position[0] = x;
 		position[1] = y;
-	}	
+	}
 	
 }

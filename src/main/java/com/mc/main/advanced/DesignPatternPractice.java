@@ -1,8 +1,15 @@
 package com.mc.main.advanced;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
+import com.mc.main.advanced.designpatterns.behavioural.iterator.AnimalList;
+import com.mc.main.advanced.designpatterns.behavioural.observer.AdminPostChecker;
+import com.mc.main.advanced.designpatterns.behavioural.observer.GroupPage;
+import com.mc.main.advanced.designpatterns.behavioural.observer.MediaObserver;
+import com.mc.main.advanced.designpatterns.behavioural.observer.MediaSubject;
+import com.mc.main.advanced.designpatterns.behavioural.observer.Subscriber;
 import com.mc.main.advanced.designpatterns.creational.CharacterSheetBuilder;
 import com.mc.main.advanced.designpatterns.creational.SingletonExample;
 import com.mc.main.advanced.designpatterns.structural.Pizza;
@@ -15,6 +22,9 @@ import com.mc.main.advanced.designpatterns.structural.decorator.Cheese;
 import com.mc.main.advanced.designpatterns.structural.decorator.Pepperoni;
 import com.mc.main.advanced.designpatterns.structural.decorator.TomatoSauce;
 import com.mc.main.advanced.res.CharacterSheet;
+import com.mc.main.oop.principles.res.polymorph.Animal;
+import com.mc.main.oop.principles.res.polymorph.Cat;
+import com.mc.main.oop.principles.res.polymorph.Dog;
 import com.mc.main.util.Practice;
 
 public class DesignPatternPractice extends Practice {
@@ -31,20 +41,26 @@ public class DesignPatternPractice extends Practice {
 	
 	public static void creational() {
 		System.out.println("CREATIONAL:\n"+"=".repeat(40));
+		System.out.println("\nSingleton:\n"+"=".repeat(10));
 		singletonPattern();
+		System.out.println("\nBuilder:\n"+"=".repeat(10));
 		builderPattern();		
 	}
 
 	public static void structural() {
 		System.out.println("STRUCTURAL:\n"+"=".repeat(40));
+		System.out.println("\nDecorator:\n"+"=".repeat(10));
 		decoratorPattern();
+		System.out.println("\nAdapter:\n"+"=".repeat(10));
 		adapterPattern();
 	}
 
 	public static void behavioural() {
 		System.out.println("BEHAVIOURAL:\n"+"=".repeat(40));
-		//iteratorPattern();
-		//observerPattern();
+		System.out.println("\nITERATOR:\n"+"=".repeat(10));
+		iteratorPattern();
+		System.out.println("\nOBSERVER:\n"+"=".repeat(10));
+		observerPattern();
 	}
 
 	// PATTERNS
@@ -174,7 +190,7 @@ public class DesignPatternPractice extends Practice {
 		
 		GermanToEnglishAdapter adapter = new GermanToEnglishAdapter(germanModule);
 
-		System.out.println("\nLanguage Interactions Unique Methods:");
+		System.out.println("Language Interactions Unique Methods:");
 		// Whilst respecting class interface we are forced to use separate
 		// class provided interfaces.
 		System.out.println(englishModule.greeting());
@@ -202,11 +218,79 @@ public class DesignPatternPractice extends Practice {
 	// BEHAVIOURAL
 	// ========================================
 	public static void iteratorPattern() {
+		// ITERATOR
+		// ========================================
+		// The Iterator Pattern allows us to set a concrete Container/aggregate
+		// as well as a separate Iterator class.
+		//
+		// Let's observe the AnimalList(our container) & AnimalIterator(our iterator) classes.
+
+		// assuming that our Iterator shares an interface with other iterators - we could
+		// have multiple Iterators in the same list - handling different value retrievals.
+		// as long a we consider access the items stored via a common implementation
+		// we could even handle them in one loop block!
+		Animal[] myAnimals = { new Dog("Fido"), new Cat("Tesla") };
+		AnimalList myAnimalList = new AnimalList(myAnimals);
 		
+		Iterator<Animal> myIterator = myAnimalList.iterator();
+		
+		// Navigate via Iterator
+		do {
+			System.out.println(myIterator.next().speak());
+		} while(myIterator.hasNext());
 	}
 	
 	public static void observerPattern() {
+		// OBSERVER
+		// ========================================
+		// The Observer pattern comprises of two major relationships
+		// One of a Subject.
+		// One of an Observer.
+		//
+		// The Subject has a singular or list of Observers.
+		// The Subject implements an interface that can manage Observers
+		// as well as notify all Observers
+		GroupPage catGroupPage = new GroupPage("Everyone Loves Cats");
+		List<MediaObserver> subList = new ArrayList<>();
+
+		// Populate Observers to catGroup
+		subList.add(new Subscriber("stripyKitten"));
+		subList.add(new Subscriber("FurballFriend"));
+		subList.add(new Subscriber("CatsRule!"));
+		subList.add(new Subscriber("CalmingPur"));
+		subList.add(new AdminPostChecker());
+		subList.stream().forEach( x -> catGroupPage.addObserver(x));
 		
+		// now our page can make a post, this will trigger the notify process
+		// passing the message to observers
+		// Automatically informing the observers they have a new change to review
+		catGroupPage.post("We've got a new catbed for sale, check our page for details!" + "\n");
+		System.out.println("Observer - News Alerts");
+		
+		// We can now review each unique Subscriber and their respective inboxes.
+		for(MediaObserver sub : subList) {
+			if(sub instanceof Subscriber) {
+				((Subscriber)sub).printInbox();
+				System.out.println("");
+			}
+		}
+		
+		// Will attempt to post to subscribers, but will result in addition of ban list
+		// This could be developed further to await the AdminPostChecker
+		// but the focus here is that an Observer can review a Subject
+		// and then perform some action based on a Subject in the Observer Pattern
+		//
+		// Additional:
+		// Observe the catGroupPage.notifyObservers(); method to investigate how we could use this
+		// to block a sub group from receiving this message!
+		catGroupPage.post("Check out our page relating to dogs!" + "\n");
+		
+		System.out.println("PAGE BAN LIST:\n" + "=".repeat(40));
+		for(MediaSubject sub : AdminPostChecker.retrieveBanList()) {
+			if(sub instanceof GroupPage) {
+				System.out.println("\t- " + ((GroupPage)sub).getName());
+			}
+		}
 	}
 
 }

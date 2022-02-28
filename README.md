@@ -45,8 +45,8 @@ The topics that'll be covered are:
 			- [X] Decorator Pattern
 			- [X] Adapter Pattern
 		- [ ] Behavioural
-			- [ ] Observer Pattern
-			- [ ] Iterator Pattern
+			- [X] Observer Pattern
+			- [X] Iterator Pattern
 	- [ ] S.O.L.I.D.
 	- [ ] Annotations
 	- [ ] File In/Out
@@ -64,10 +64,10 @@ The topics that'll be covered are:
 	- [X] For-Each loops
 	- [X] VarArgs
 	- [ ] Static import
-	- [ ] Enumeration
+	- [X] Enumeration
 	- [X] AutoBoxing (Wrapper Classes, type inference)
 	- [ ] Annotations
-	- [ ] Generics
+	- [X] Generics
 	
 - [ ] JAVA 7
 	- [ ] (String enabled) Switch-Case
