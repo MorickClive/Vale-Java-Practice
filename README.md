@@ -38,7 +38,7 @@ The topics that'll be covered are:
 	- [X] Exceptions: try, try-catch, try-finally
 	- [ ] Scanners:
 	- [ ] Design Patterns
-		- [ ] Creational
+		- [X] Creational
 			- [X] Builder Pattern
 			- [X] Singleton
 		- [ ] Structural
