@@ -41,7 +41,7 @@ The topics that'll be covered are:
 		- [X] Creational
 			- [X] Builder Pattern
 			- [X] Singleton
-		- [ ] Structural
+		- [X] Structural
 			- [X] Decorator Pattern
 			- [X] Adapter Pattern
 		- [ ] Behavioural
