@@ -16,7 +16,7 @@ import com.mc.main.advanced.designpatterns.structural.Pizza;
 import com.mc.main.advanced.designpatterns.structural.PizzaBase;
 import com.mc.main.advanced.designpatterns.structural.adapter.EnglishInteractions;
 import com.mc.main.advanced.designpatterns.structural.adapter.GermanInteractions;
-import com.mc.main.advanced.designpatterns.structural.adapter.GermanToEnglishAdapter;
+import com.mc.main.advanced.designpatterns.structural.adapter.EnglishToGermanAdapter;
 import com.mc.main.advanced.designpatterns.structural.adapter.LanguageInteractions;
 import com.mc.main.advanced.designpatterns.structural.decorator.Cheese;
 import com.mc.main.advanced.designpatterns.structural.decorator.Pepperoni;
@@ -181,14 +181,13 @@ public class DesignPatternPractice extends Practice {
 		// So we can have completely separate implementations add to an existing concrete class
 		// as long as they share a common interface!
 	}
-
 	public static void adapterPattern() {
 		// Let's observe the differences between EnglishInteractions and GermanInteractions
 		// in their respective classes.
 		EnglishInteractions englishModule = new EnglishInteractions();
 		GermanInteractions germanModule = new GermanInteractions();
 		
-		GermanToEnglishAdapter adapter = new GermanToEnglishAdapter(germanModule);
+		EnglishToGermanAdapter adapter = new EnglishToGermanAdapter(germanModule);
 
 		System.out.println("Language Interactions Unique Methods:");
 		// Whilst respecting class interface we are forced to use separate

@@ -3,7 +3,7 @@ package com.mc.main.advanced.designpatterns.structural.adapter;
 // Here we store the German Interactions as a composite of the adapter
 // this allows us to then map interactions from the GermanInteractions
 // instance into the constraint of our LanguageInteractions interface
-public class GermanToEnglishAdapter implements LanguageInteractions {
+public class EnglishToGermanAdapter implements LanguageInteractions {
 	
 	// The stored instance will become a target for member translation
 	// to the common interface - LanguageInteractions
@@ -15,7 +15,7 @@ public class GermanToEnglishAdapter implements LanguageInteractions {
 	// that method, the adapter may need to identify this first using the 'instanceof' comparison
 	// first!
 	
-	public GermanToEnglishAdapter(GermanInteractions lang) {
+	public EnglishToGermanAdapter(GermanInteractions lang) {
 		super();
 		this.lang = lang;
 	}

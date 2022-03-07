@@ -7,7 +7,7 @@ package com.mc.main.advanced.designpatterns.structural;
 // Let's look at the Pizza Decorator next
 public class PizzaBase implements Pizza {
 
-	public double price = 5.0;
+	private double price = 5.0;
 	
 	public PizzaBase() {
 		super();
