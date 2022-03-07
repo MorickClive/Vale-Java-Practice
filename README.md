@@ -37,14 +37,14 @@ The topics that'll be covered are:
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
 	- [ ] Scanners:
-	- [ ] Design Patterns
+	- [X] Design Patterns
 		- [X] Creational
 			- [X] Builder Pattern
 			- [X] Singleton
 		- [X] Structural
 			- [X] Decorator Pattern
 			- [X] Adapter Pattern
-		- [ ] Behavioural
+		- [X] Behavioural
 			- [X] Observer Pattern
 			- [X] Iterator Pattern
 	- [ ] S.O.L.I.D.

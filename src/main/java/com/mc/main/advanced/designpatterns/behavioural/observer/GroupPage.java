@@ -8,7 +8,7 @@ public class GroupPage implements MediaSubject {
 	
 	private String name;
 	private final String creationDate;
-	public List<String> posts;
+	private List<String> posts;
 
 	private List<MediaObserver> observers;
 	

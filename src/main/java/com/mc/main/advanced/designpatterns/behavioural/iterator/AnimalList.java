@@ -21,6 +21,10 @@ public class AnimalList implements Iterable<Animal> {
 	public void setAnimalList(Animal[] list) {
 		this.listOfAnimals = list;
 	}
+	
+	public Animal[] getAnimalList() {
+		return this.listOfAnimals;
+	}
 
 	// To interact with the list, we'd be forced to iterator for each item
 	// as the interface is differed to the AnimalIterator class.

@@ -1,6 +1,7 @@
 package com.mc.main.advanced.designpatterns.behavioural.observer;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class Subscriber implements MediaObserver {
 	
@@ -48,14 +49,11 @@ public class Subscriber implements MediaObserver {
 	}
 	
 	public String getMessage(int key) {
-		if(this.inbox.get(key) == null) {
-			return null;
-		}
 		return this.inbox.get(key);
 	}
 	
 	public boolean editMessage(int key, String message) {
-		if(this.inbox.get(key) == null) {
+		if(getMessage(key) == null) {
 			return false;
 		}
 		
@@ -64,14 +62,13 @@ public class Subscriber implements MediaObserver {
 	}
 
 	public void printInbox() {
-		HashMap<Integer,String> messages = this.getInbox();
 		String div = "=".repeat(40);
+		
 		System.out.println(username + "'s Inbox:\n" + div);
 		
-		for (int x = 1; x < messages.size()+1; x++) {
-			System.out.println("Message #" + x + ":\n\t" + messages.get(x));
+		for(Entry<Integer, String> message : inbox.entrySet()) {
+			System.out.println("Message #" + message.getKey() + ":\n\t" + message.getValue());
 		}
-		
 
 		System.out.println(div);
 	}

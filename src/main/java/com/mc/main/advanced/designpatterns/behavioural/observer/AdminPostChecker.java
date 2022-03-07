@@ -30,9 +30,6 @@ public class AdminPostChecker implements MediaObserver {
 	}
 	
 	public static List<MediaSubject> retrieveBanList() {
-		if(banList == null) {
-			banList = new ArrayList<>();		
-		}
 		return banList;
 	}
 
