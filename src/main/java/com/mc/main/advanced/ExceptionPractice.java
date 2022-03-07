@@ -1,15 +1,18 @@
-package com.mc.main.procedural;
+package com.mc.main.advanced;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ExceptionPractice {
+import com.mc.main.util.Practice;
+
+public class ExceptionPractice extends Practice {
 	
 	/** We don't want to create an instance of this class */
 	private ExceptionPractice() { super();	}
 	
 	public static void start() {
+		printHeader("Exceptions");
 		// Up to this point, we've looked at variables, arrays, loops, conditionals
 		// and primarily a considerable amount of basic java interaction
 		// 
@@ -61,7 +64,7 @@ public class ExceptionPractice {
 			// appears in the console to aid debugging.
 			// we can use a method from the exception class to print out
 			// the standard stack trace message ourselves.
-			System.out.print(e);
+			System.out.println(e);
 			// Alternatively we could use this:
 			// e.printStackTrace();
 			// however we will avoid this because of parallel execution.
@@ -85,7 +88,7 @@ public class ExceptionPractice {
 			// Activate a connection to a server - null for demo
 			activeConnection = DriverManager.getConnection("");
 		} catch(Exception e) {
-			System.out.print(e);
+			System.out.println(e);
 		} finally {
 			System.out.println("Always run this");
 			// in this case, the active connection has a close method that can
@@ -104,7 +107,7 @@ public class ExceptionPractice {
 				// thus we can catch that specific exception type
 				// if it throws more than one type of Exception, it maybe
 				// more appropriate to use a more generic Exception.
-				System.out.print(e);
+				System.out.println(e);
 			}
 		}
 		
@@ -136,7 +139,7 @@ public class ExceptionPractice {
 			// after this try-catch block, you could add the close method invocation
 			// in a finally block
 		}catch(Exception e) {
-			System.out.print(e);
+			System.out.println(e);
 		}
 		
 		// try-finally
@@ -158,14 +161,14 @@ public class ExceptionPractice {
 		try {
 			genericException(null);
 		} catch (Exception e) {
-			System.out.print(e);
+			System.out.println(e);
 		}
 		
 		// throw-throws example
 		try {
 		explicitNumericException(0);
 		}catch (Exception e) {
-			System.out.print(e);
+			System.out.println(e);
 		}
 
 	}

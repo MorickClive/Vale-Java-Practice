@@ -36,12 +36,22 @@ The topics that'll be covered are:
    
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
-	- [ ] Design Patterns
+	- [ ] Scanners:
+	- [X] Design Patterns
+		- [X] Creational
+			- [X] Builder Pattern
+			- [X] Singleton
+		- [X] Structural
+			- [X] Decorator Pattern
+			- [X] Adapter Pattern
+		- [X] Behavioural
+			- [X] Observer Pattern
+			- [X] Iterator Pattern
 	- [ ] S.O.L.I.D.
 	- [ ] Annotations
 	- [ ] File In/Out
 	- [ ] Java Pattern/Regular Expression
-	- [ ] Multi-Threading
+	- [ ] Multithreading
 	- [ ] Reflection
 
 ---
@@ -54,10 +64,10 @@ The topics that'll be covered are:
 	- [X] For-Each loops
 	- [X] VarArgs
 	- [ ] Static import
-	- [ ] Enumeration
+	- [X] Enumeration
 	- [X] AutoBoxing (Wrapper Classes, type inference)
 	- [ ] Annotations
-	- [ ] Generics
+	- [X] Generics
 	
 - [ ] JAVA 7
 	- [ ] (String enabled) Switch-Case
