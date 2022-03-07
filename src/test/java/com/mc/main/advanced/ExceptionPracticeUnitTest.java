@@ -1,4 +1,4 @@
-package com.mc.main.procedural;
+package com.mc.main.advanced;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
+
+import com.mc.main.advanced.ExceptionPractice;
 
 public class ExceptionPracticeUnitTest {
 

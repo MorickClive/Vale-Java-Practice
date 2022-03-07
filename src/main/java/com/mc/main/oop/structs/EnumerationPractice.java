@@ -1,10 +1,13 @@
 package com.mc.main.oop.structs;
 
-public class EnumerationPractice {
+import com.mc.main.util.Practice;
+
+public class EnumerationPractice extends Practice {
 	
 	private EnumerationPractice() { super(); }
 	
 	public static void start() {
+		printHeader("Enums");
 		
 		// For this section we'll look at the nested enum below
 		// and then observe how an enum can be put in use in regular
