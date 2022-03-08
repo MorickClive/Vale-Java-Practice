@@ -36,7 +36,7 @@ The topics that'll be covered are:
    
 - [ ] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
-	- [ ] Scanners
+	- [X] Scanners
 	- [X] Design Patterns
 		- [X] Creational
 			- [X] Builder Pattern

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.advanced.designpatterns.structural.PizzaBase;
 
-public class PizzaDecoratorUnitTest {
+public class PizzaDecoratorUnitTEST {
 	
 	private static Cheese testDecorator;
 

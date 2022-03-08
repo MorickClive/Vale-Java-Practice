@@ -10,6 +10,10 @@ public class ScannerPractice extends Practice {
 	// each space will separate a user submission.
 	private static final String sampleStreamInput = "Cat Dog Penguin Bird Seagul";
 	
+	private ScannerPractice() { 
+		super();
+	}
+	
 	// In a basic explanation, Scanners are our best tool for asking users for their
 	// feedback through user input.
 	//
@@ -38,7 +42,7 @@ public class ScannerPractice extends Practice {
 			// that fakes user input.
 			System.out.println("User Input 1: " + Console.input());
 			System.out.println("User Input 3: " + Console.input());
-			System.out.println("User Input 4: " + Console.input());
+			//System.out.println("User Input 4: " + Console.input());
 			
 			// Whilst the above will be mocked to automatically run, Console.input() or Scanner.next()
 			// would wait for a user to input a message and press enter to submit the result!

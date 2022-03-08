@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.advanced.ExceptionPractice;
 
-public class ExceptionPracticeUnitTest {
+public class ExceptionPracticeUnitTEST {
 
 	@Test
 	public void exceptionStart() {

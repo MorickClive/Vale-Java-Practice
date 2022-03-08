@@ -10,7 +10,7 @@ import com.mc.main.oop.principles.res.polymorph.Animal;
 import com.mc.main.oop.principles.res.polymorph.Cat;
 import com.mc.main.oop.principles.res.polymorph.Dog;
 
-public class AnimalListUnitTest {
+public class AnimalListUnitTEST {
 	
 	private static AnimalList testList;
 	
