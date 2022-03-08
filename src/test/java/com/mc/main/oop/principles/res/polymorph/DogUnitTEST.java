@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.oop.principles.res.polymorph.Dog;
 
-public class DogUnitTest {
+public class DogUnitTEST {
 
 	private Dog dog;
 	

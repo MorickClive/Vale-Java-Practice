@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class AdminPostCheckerUnitTest {
+public class AdminPostCheckerUnitTEST {
 	
 	private static AdminPostChecker testObserver;
 	private static GroupPage testPage;

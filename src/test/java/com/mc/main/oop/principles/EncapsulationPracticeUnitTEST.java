@@ -2,11 +2,11 @@ package com.mc.main.oop.principles;
 
 import org.junit.jupiter.api.Test;
 
-public class PolymorphismPracticeUnitTest {
-	
+public class EncapsulationPracticeUnitTEST {
+
 	@Test
 	public void startTest() {
-		PolymorphismPractice.start();
+		EncapsulationPractice.start();
 	}
 	
 }

@@ -1,15 +1,15 @@
-package com.mc.main.advanced;
+package com.mc.main.advanced.ui;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
-public class DesignPatternPracticeUnitTest {
-
+public class ScannerPracticeUnitTEST {
+	
 	@Test
 	public void exceptionStart() {
 		try {
-			DesignPatternPractice.start();
+			ScannerPractice.start();
 		}catch (Exception e) {
 			fail();
 		}

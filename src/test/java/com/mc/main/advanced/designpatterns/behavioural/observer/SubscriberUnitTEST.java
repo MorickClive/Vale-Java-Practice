@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class SubscriberUnitTest {
+public class SubscriberUnitTEST {
 	
 	private static Subscriber testSub;
 	private static String testName;

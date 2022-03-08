@@ -2,7 +2,7 @@ package com.mc.main.oop.principles;
 
 import org.junit.jupiter.api.Test;
 
-public class AbstractionPracticeUnitTest {
+public class AbstractionPracticeUnitTEST {
 	
 	@Test
 	public void startTest() {
