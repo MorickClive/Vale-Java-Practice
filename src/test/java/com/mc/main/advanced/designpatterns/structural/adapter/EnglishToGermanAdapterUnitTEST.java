@@ -6,26 +6,27 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class EnglishInteractionsUnitTest {
-	
-	private static EnglishInteractions testIteraction;
+public class EnglishToGermanAdapterUnitTEST {
+
+	private static EnglishToGermanAdapter testAdapter;
 
 	@BeforeAll
 	public static void setup() {
-		testIteraction = new EnglishInteractions();
+		testAdapter = new EnglishToGermanAdapter(new GermanInteractions());
 	}
 	
 	@Test
 	public void allArgsConstructor() {
-		testIteraction = new EnglishInteractions();
+		testAdapter = new EnglishToGermanAdapter(new GermanInteractions());
 		
-		assertTrue(testIteraction instanceof EnglishInteractions);
+		assertTrue(testAdapter instanceof EnglishToGermanAdapter);
 	}
 
 	@Test
 	public void accessGreeting() {
-		String expect = "Hello!";
+		String expect = "Hallo, willkommen!";
 		
-		assertEquals(expect, testIteraction.greeting());
+		assertEquals(expect, testAdapter.greeting());
 	}
+
 }

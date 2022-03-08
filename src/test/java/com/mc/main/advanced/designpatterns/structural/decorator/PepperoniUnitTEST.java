@@ -8,32 +8,32 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.advanced.designpatterns.structural.PizzaBase;
 
-public class CheeseUnitTest {
+public class PepperoniUnitTEST {
 	
-	private static Cheese testDecoration;
+	private static Pepperoni testDecoration;
 	
 	@BeforeAll
 	public static void setup() {
-		testDecoration = new Cheese(new PizzaBase());
+		testDecoration = new Pepperoni(new PizzaBase());
 	}
-	
+
 	@Test
 	public void defaultConstructor() {
-		testDecoration = new Cheese(new PizzaBase());
+		testDecoration = new Pepperoni(new PizzaBase());
 		
-		assertTrue(testDecoration instanceof Cheese);
+		assertTrue(testDecoration instanceof Pepperoni);
 	}	
 
 	@Test
 	public void accessPrice() {
-		double expect = 5.75;
+		double expect = 6.25;
 		
 		assertEquals(expect, testDecoration.price());
 	}
 
 	@Test
 	public void accessDescription() {
-		String expect = "This pizza has the following:\nA base, gratted cheese";
+		String expect = "This pizza has the following:\nA base, pepperoni slices";
 		
 		assertEquals(expect, testDecoration.description());
 	}

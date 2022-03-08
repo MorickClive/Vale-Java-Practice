@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.oop.principles.res.polymorph.Cat;
 
-public class CatUnitTest {
+public class CatUnitTEST {
 	
 	private Cat cat;
 	

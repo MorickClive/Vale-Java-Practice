@@ -8,35 +8,34 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.advanced.designpatterns.structural.PizzaBase;
 
-
-public class TomatoSauceUnitTest {
+public class CheeseUnitTEST {
 	
-	private static TomatoSauce testDecoration;
+	private static Cheese testDecoration;
 	
 	@BeforeAll
 	public static void setup() {
-		testDecoration = new TomatoSauce(new PizzaBase());
+		testDecoration = new Cheese(new PizzaBase());
 	}
 	
 	@Test
 	public void defaultConstructor() {
-		testDecoration = new TomatoSauce(new PizzaBase());
+		testDecoration = new Cheese(new PizzaBase());
 		
-		assertTrue(testDecoration instanceof TomatoSauce);
+		assertTrue(testDecoration instanceof Cheese);
 	}	
 
 	@Test
 	public void accessPrice() {
-		double expect = 6.5;
+		double expect = 5.75;
 		
 		assertEquals(expect, testDecoration.price());
 	}
 
 	@Test
 	public void accessDescription() {
-		String expect = "This pizza has the following:\nA base, a layer of tomato sauce";
+		String expect = "This pizza has the following:\nA base, gratted cheese";
 		
 		assertEquals(expect, testDecoration.description());
 	}
-
+	
 }

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.advanced.res.CharacterSheet;
 
-public class CharacterSheetBuilderUnitTest {
+public class CharacterSheetBuilderUnitTEST {
 
 	private static CharacterSheetBuilder builder;
 	private static CharacterSheet build;

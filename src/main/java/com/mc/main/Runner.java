@@ -1,11 +1,6 @@
 package com.mc.main;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import com.mc.main.advanced.ui.scanner.Console;
 
 // Find FlowControlPractice.java to start!
 public class Runner {
@@ -31,9 +26,18 @@ public class Runner {
 		System.out.println("HELLO WORLD");
 
 		// Continued:
-		start();
-
-		System.out.println("Application ENDS");
+		try {
+			start();
+		} finally {
+			// SCANNER close method:
+			// Clean up active resources at end of application
+			// finally allows closure post-exception encounter - ensuring closure in most
+			// if not all error cases
+			Console.close();
+			// Let's return to Console.input()!
+			
+			System.out.println("Application ENDS");
+		}
 	}
 
 	protected static void start() {

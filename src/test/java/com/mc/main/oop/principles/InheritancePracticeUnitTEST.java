@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import com.mc.main.oop.principles.res.inherit.Book;
 
-public class InheritancePracticeUnitTest {
+public class InheritancePracticeUnitTEST {
 	
 	private final Book myBook = new Book("Example Book Title","Alex", "20/02/2022", "Educational", 202);
 	private InheritancePractice.Library exampleLibrary;
