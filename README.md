@@ -47,9 +47,9 @@ The topics that'll be covered are:
 		- [X] Behavioural
 			- [X] Observer Pattern
 			- [X] Iterator Pattern
+	- [ ] File In/Out
 	- [ ] S.O.L.I.D.
 	- [ ] Annotations
-	- [ ] File In/Out
 	- [ ] Java Pattern/Regular Expression
 	- [ ] Multithreading
 	- [ ] Reflection
