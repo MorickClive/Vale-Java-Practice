@@ -14,6 +14,8 @@ public class IOPractice extends Practice {
 	private static final String message = "Hello World!";
 	private static final String filePath = "\\src\\main\\resources\\";
 	private static final String fileName = "testFile.txt";
+	
+	private IOPractice() { super(); }
 
 	public static void start() {
 		printHeader("Input/Output");
@@ -30,9 +32,9 @@ public class IOPractice extends Practice {
 		
 		// There are different classes provided that can aid in the reading of the contents of a file
 		// the follow methods are drive by their respective classes.
-		FileHandler.readFile(file, Scanner.class);
-		FileHandler.readFile(file, BufferedReader.class);
-		FileHandler.readFile(file, FileReader.class);
+		System.out.println( FileHandler.readFile(file, Scanner.class) );
+		System.out.println( FileHandler.readFile(file, BufferedReader.class) );
+		System.out.println( FileHandler.readFile(file, FileReader.class) );
 		
 		// Remove file for rerun purposes
 		FileHandler.deleteTargetFile(file);

@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class FileHandler {
@@ -17,12 +18,7 @@ public class FileHandler {
 		// of the File instance, however we'll also want to make changes to this file.
 		//
 		// We can use the FileWriter to target a file we'd like to make changes to
-		try (FileWriter writeToFile = new FileWriter(file.getAbsolutePath())) {
-
-			if (!file.isFile()) {
-				file.createNewFile();
-			}
-			
+		try (FileWriter writeToFile = new FileWriter(file.getAbsolutePath())) {			
 			writeToFile.write(msg);
 			
 			return true;
@@ -32,7 +28,7 @@ public class FileHandler {
 		}
 	}
 
-	public static void readFile(File file, Class<? extends Closeable> readerType) {
+	public static String readFile(File file, Class<? extends Closeable> readerType) {
 		// This example is directed to another method
 		// normally we'd attempt to keep a method focused only on what it should do
 		// however in this practice there are multiple ways to achieve the same thing
@@ -60,7 +56,7 @@ public class FileHandler {
 			fileContents = "Error, could not read file!";
 		}
 		
-		System.out.println(fileContents);
+		return fileContents;
 	}
 	
 	private static String readScanner(String filePath) {
@@ -104,7 +100,7 @@ public class FileHandler {
 		String line;
 		
 		try ( FileReader reader = new FileReader(filePath) ) {	
-	        int x;
+	       int x;
 	        
 	        while ((x = reader.read()) != -1) {
 	        	fileContents.append((char)x);
