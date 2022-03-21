@@ -1,10 +1,11 @@
-package com.mc.main.advanced.io;
+package com.mc.main.advanced;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.Scanner;
 
+import com.mc.main.advanced.io.FileHandler;
 import com.mc.main.util.Practice;
 
 public class IOPractice extends Practice {
