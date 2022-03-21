@@ -16,7 +16,7 @@ public class StringPractice {
 		// there are some data types that are considered more complex.
 		//stringComparision();
 		stringMethods();
-		
+		stringComparision();
 		// Next: Explore Application.java
 		
 		//TODO: add escape & control character examples!
