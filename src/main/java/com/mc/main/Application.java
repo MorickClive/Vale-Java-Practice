@@ -2,8 +2,9 @@ package com.mc.main;
 
 import com.mc.main.advanced.DesignPatternPractice;
 import com.mc.main.advanced.ExceptionPractice;
+import com.mc.main.advanced.IOPractice;
+import com.mc.main.advanced.PatternPractice;
 import com.mc.main.advanced.ReflectionPractice;
-import com.mc.main.advanced.io.IOPractice;
 import com.mc.main.advanced.ui.ScannerPractice;
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
@@ -79,6 +80,7 @@ public enum Application {
 				ScannerPractice.start();
 				IOPractice.start();
 				ReflectionPractice.start();
+				PatternPractice.start();
 				break;
 				
 			case JAVA8:

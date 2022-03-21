@@ -20,7 +20,7 @@ public class FileHandlerUnitTEST {
 	
 	private static String testFolder;
 	private static File file;
-	private static final String message = "Hello World!";
+	private static final String message = "Hello World!\r\n";
 	private static final String filePath = "\\src\\test\\resources\\";
 	private static final String fileName = "testFile.txt";
 	
