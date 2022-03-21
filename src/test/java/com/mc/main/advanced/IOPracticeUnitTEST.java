@@ -9,7 +9,7 @@ import com.mc.main.advanced.IOPractice;
 public class IOPracticeUnitTEST {
 	
 	@Test
-	public void exceptionStart() {
+	public void ioPracticeStart() {
 		try {
 			IOPractice.start();
 		}catch (Exception e) {
