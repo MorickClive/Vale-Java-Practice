@@ -66,7 +66,7 @@ public class FileHandler {
 		try (Scanner readFile = new Scanner(new File(filePath))) {	
 			
 			while(readFile.hasNextLine()) {
-				fileContents.append(readFile.nextLine());
+				fileContents.append(readFile.nextLine() + "\r\n");
 			}
 			
 			return fileContents.toString();
@@ -84,7 +84,7 @@ public class FileHandler {
 		try ( BufferedReader br = new BufferedReader(new FileReader(new File(filePath))) ) {	
 			
 			while ((line = br.readLine()) != null) {
-				fileContents.append(line);
+				fileContents.append(line + "\r\n");
 			}
 			
 			return fileContents.toString();

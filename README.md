@@ -49,7 +49,7 @@ The topics that'll be covered are:
 			- [X] Iterator Pattern
 	- [X] File In/Out
 	- [ ] Annotations
-	- [ ] Java Pattern/Regular Expression
+	- [X] Java Pattern/Regular Expression
 	- [ ] Multithreading
 	- [X] Reflection
 	- [ ] S.O.L.I.D.
