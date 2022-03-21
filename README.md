@@ -51,7 +51,7 @@ The topics that'll be covered are:
 	- [ ] Annotations
 	- [ ] Java Pattern/Regular Expression
 	- [ ] Multithreading
-	- [ ] Reflection
+	- [X] Reflection
 	- [ ] S.O.L.I.D.
 
 ---
