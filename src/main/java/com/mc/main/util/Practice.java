@@ -5,10 +5,7 @@ public abstract class Practice {
 	protected Practice() { super(); }
 	
 	protected static void printHeader(String className) {
-		System.out.println(
-			String.format(
-			"%s%s%s%s%s%s", "\n", "=".repeat(40), "\n", className, "\n", "=".repeat(40))
-		);
+		System.out.format("\n%s\n%s\n%s\n", StringConst.DIV, className, StringConst.DIV);
 	}
 
 }

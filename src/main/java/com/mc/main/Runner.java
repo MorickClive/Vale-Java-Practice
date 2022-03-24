@@ -1,10 +1,12 @@
 package com.mc.main;
 
 import com.mc.main.advanced.ui.scanner.Console;
+import com.mc.main.util.ApplicationTime;
+import com.mc.main.util.StringConst;
 
 // Find FlowControlPractice.java to start!
 public class Runner {
-
+	
 	/**
 	 * <p>
 	 * This project is a refresher of Java coding for `Alan Davies`, comments here
@@ -24,7 +26,7 @@ public class Runner {
 	public static void main(String[] args) {
 		// A simple print function, outputting to console
 		System.out.println("HELLO WORLD");
-
+		
 		// Continued:
 		try {
 			start();
@@ -37,11 +39,14 @@ public class Runner {
 			// Let's return to Console.input()!
 			
 			System.out.println("Application ENDS");
+			ApplicationTime.printElapsedTime();
 		}
 	}
+	
+	private static final ApplicationTime time = new ApplicationTime();
 
 	protected static void start() {
-		System.out.println("=".repeat(40) + "\n");
+		System.out.println(StringConst.DIV + "\n");
 
 		Application.PROCEDURAL.run();
 		Application.OOP.run();

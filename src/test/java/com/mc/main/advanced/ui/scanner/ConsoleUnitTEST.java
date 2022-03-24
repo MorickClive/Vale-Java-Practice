@@ -16,7 +16,7 @@ public class ConsoleUnitTEST {
 	//TODO: add tests to control private static context
 	//TODO: Mocking
 	private static final String userInput = "TEST_WORD";
-	private static final String div = "=".repeat(40);
+	private static final String div = StringConst.DIV;
 	private static int testCount;
 	
 	@BeforeEach
