@@ -92,7 +92,6 @@ public class ThreadPractice extends Practice {
 			// invocation and execution of code with threading!
 			threadControl();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

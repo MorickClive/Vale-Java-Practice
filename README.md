@@ -50,9 +50,9 @@ The topics that'll be covered are:
 	- [X] File In/Out
 	- [ ] Annotations
 	- [X] Java Pattern/Regular Expression
+	- [X] Threads
 	- [ ] Multithreading
 	- [X] Reflection
-	- [ ] S.O.L.I.D.
 
 ---
 

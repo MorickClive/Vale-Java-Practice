@@ -19,10 +19,12 @@ public class ArrayPrintWait<T> extends Thread {
 			for(Object item : array) {
 				System.out.format("%s: - #%d : %s\n", Thread.currentThread().getName(), ++y, item);
 				try {
-					Thread.sleep(50);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+					if(Thread.interrupted()) {
+						throw new InterruptedException();
+					}
+				}catch (Exception e) {
 					e.printStackTrace();
+					return;
 				}
 			}
 		}
