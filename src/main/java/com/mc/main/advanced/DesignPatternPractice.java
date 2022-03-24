@@ -15,8 +15,8 @@ import com.mc.main.advanced.designpatterns.creational.SingletonExample;
 import com.mc.main.advanced.designpatterns.structural.Pizza;
 import com.mc.main.advanced.designpatterns.structural.PizzaBase;
 import com.mc.main.advanced.designpatterns.structural.adapter.EnglishInteractions;
-import com.mc.main.advanced.designpatterns.structural.adapter.GermanInteractions;
 import com.mc.main.advanced.designpatterns.structural.adapter.EnglishToGermanAdapter;
+import com.mc.main.advanced.designpatterns.structural.adapter.GermanInteractions;
 import com.mc.main.advanced.designpatterns.structural.adapter.LanguageInteractions;
 import com.mc.main.advanced.designpatterns.structural.decorator.Cheese;
 import com.mc.main.advanced.designpatterns.structural.decorator.Pepperoni;
@@ -26,8 +26,11 @@ import com.mc.main.oop.principles.res.polymorph.Animal;
 import com.mc.main.oop.principles.res.polymorph.Cat;
 import com.mc.main.oop.principles.res.polymorph.Dog;
 import com.mc.main.util.Practice;
+import com.mc.main.util.StringConst;
 
 public class DesignPatternPractice extends Practice {
+	
+	private static final String div10 = "=".repeat(10);
 	
 	private DesignPatternPractice() { super(); }
 
@@ -40,26 +43,26 @@ public class DesignPatternPractice extends Practice {
 	}
 	
 	public static void creational() {
-		System.out.println("CREATIONAL:\n"+"=".repeat(40));
-		System.out.println("\nSingleton:\n"+"=".repeat(10));
+		System.out.println("CREATIONAL:\n" + StringConst.DIV);
+		System.out.println("\nSingleton:\n" + div10);
 		singletonPattern();
-		System.out.println("\nBuilder:\n"+"=".repeat(10));
+		System.out.println("\nBuilder:\n" + div10);
 		builderPattern();		
 	}
 
 	public static void structural() {
-		System.out.println("STRUCTURAL:\n"+"=".repeat(40));
-		System.out.println("\nDecorator:\n"+"=".repeat(10));
+		System.out.println("STRUCTURAL:\n" + StringConst.DIV);
+		System.out.println("\nDecorator:\n" + div10);
 		decoratorPattern();
-		System.out.println("\nAdapter:\n"+"=".repeat(10));
+		System.out.println("\nAdapter:\n" + div10);
 		adapterPattern();
 	}
 
 	public static void behavioural() {
-		System.out.println("BEHAVIOURAL:\n"+"=".repeat(40));
-		System.out.println("\nITERATOR:\n"+"=".repeat(10));
+		System.out.println("BEHAVIOURAL:\n"+ StringConst.DIV);
+		System.out.println("\nITERATOR:\n"+div10);
 		iteratorPattern();
-		System.out.println("\nOBSERVER:\n"+"=".repeat(10));
+		System.out.println("\nOBSERVER:\n"+div10);
 		observerPattern();
 	}
 
@@ -284,7 +287,7 @@ public class DesignPatternPractice extends Practice {
 		// to block a sub group from receiving this message!
 		catGroupPage.post("Check out our page relating to dogs!" + "\n");
 		
-		System.out.println("PAGE BAN LIST:\n" + "=".repeat(40));
+		System.out.println("PAGE BAN LIST:\n" + StringConst.DIV);
 		for(MediaSubject sub : AdminPostChecker.retrieveBanList()) {
 			if(sub instanceof GroupPage) {
 				System.out.println("\t- " + ((GroupPage)sub).getName());

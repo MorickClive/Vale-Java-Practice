@@ -71,7 +71,6 @@ public class InheritancePractice {
 		// ========================================
 		public Library() {
 			super();
-			// TODO Auto-generated constructor stub
 		}
 
 		public Library(String name, String address, Book exampleBook) {

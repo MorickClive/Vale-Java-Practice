@@ -3,6 +3,8 @@ package com.mc.main.advanced.designpatterns.behavioural.observer;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import com.mc.main.util.StringConst;
+
 public class Subscriber implements MediaObserver {
 	
 	private String username;
@@ -61,15 +63,13 @@ public class Subscriber implements MediaObserver {
 		return true;
 	}
 
-	public void printInbox() {
-		String div = "=".repeat(40);
-		
-		System.out.println(username + "'s Inbox:\n" + div);
+	public void printInbox() {		
+		System.out.println(username + "'s Inbox:\n" + StringConst.DIV);
 		
 		for(Entry<Integer, String> message : inbox.entrySet()) {
 			System.out.println("Message #" + message.getKey() + ":\n\t" + message.getValue());
 		}
 
-		System.out.println(div);
+		System.out.println(StringConst.DIV);
 	}
 }

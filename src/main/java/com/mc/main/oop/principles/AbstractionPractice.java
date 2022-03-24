@@ -7,6 +7,7 @@ import com.mc.main.oop.principles.res.abstraction.Bird;
 import com.mc.main.oop.principles.res.abstraction.FlyingBird;
 import com.mc.main.oop.principles.res.abstraction.Penguin;
 import com.mc.main.oop.principles.res.abstraction.Seagul;
+import com.mc.main.util.StringConst;
 
 public class AbstractionPractice {
 	
@@ -34,8 +35,7 @@ public class AbstractionPractice {
 		birdList.add(new Penguin("Fiordland Penguin"));
 
 		
-		System.out.println("Birds and their capabilities:");
-		System.out.println("=".repeat(40));
+		System.out.format("Birds and their capabilities:\n%s\n", StringConst.DIV);
 		FlyingBird flyingBird;
 		
 		// We can now go through a list of birds and hand them respectively based on their
@@ -77,7 +77,7 @@ public class AbstractionPractice {
 			System.out.println("");
 		}
 		
-		System.out.println("=".repeat(40));
+		System.out.println(StringConst.DIV);
 	}
 
 }

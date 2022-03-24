@@ -1,6 +1,7 @@
 package com.mc.main.oop.structs;
 
 import com.mc.main.util.Practice;
+import com.mc.main.util.StringConst;
 
 public class EnumerationPractice extends Practice {
 	
@@ -21,7 +22,7 @@ public class EnumerationPractice extends Practice {
 		// available constants.
 		//
 		// We can do this using the '.values()' method.
-		System.out.println("List of planets:\n"+ "=".repeat(40));
+		System.out.println("List of planets:\n" + StringConst.DIV);
 		
 		for(Planet planet : Planet.values()) {
 			System.out.print(planet);
