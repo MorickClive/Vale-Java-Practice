@@ -11,12 +11,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+import com.mc.main.util.StringConst;
+
 public class ConsoleUnitTEST {
 	
 	//TODO: add tests to control private static context
 	//TODO: Mocking
 	private static final String userInput = "TEST_WORD";
-	private static final String div = "=".repeat(40);
+	private static final String div = StringConst.DIV.toString();
 	private static int testCount;
 	
 	@BeforeEach
