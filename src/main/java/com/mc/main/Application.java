@@ -1,5 +1,6 @@
 package com.mc.main;
 
+import com.mc.main.advanced.ConcurrencyPractice;
 import com.mc.main.advanced.DesignPatternPractice;
 import com.mc.main.advanced.ExceptionPractice;
 import com.mc.main.advanced.IOPractice;
@@ -81,6 +82,7 @@ public enum Application {
 				ReflectionPractice.start();
 				PatternPractice.start();
 				ThreadPractice.start();
+				ConcurrencyPractice.start();
 				break;
 				
 			case JAVA8:

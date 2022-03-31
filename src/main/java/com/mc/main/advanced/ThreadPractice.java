@@ -72,12 +72,17 @@ public class ThreadPractice extends Practice {
 		// have 3-7 free cores
 		// not doing anything!
 		//
-		// When we break up instruction intense operations into thread, we can directly
+		// When we break up instruction intense operations into threads, we can directly
 		// benefit from multi-core processing and enhance the efficiency of our code by
 		// making use of unutilised processing units.
+		//
+		// However the usage of benefiting from parallel processing will primarily be covered in
+		// ConcurrencyPractice.
+		//
+		// First we need to appreciate the nuance of threads and their lifecycles.
 		printHeader("Threads");
 
-		// all threads have the capability of throwing an InterruptedException
+		// All threads have the capability of throwing an InterruptedException
 		// as such we'll capture any throws here
 		try {
 			// Let's begin looking at a very basic example!
@@ -114,12 +119,11 @@ public class ThreadPractice extends Practice {
 		// is in fact a thread. When we create a method that is called within main - it
 		// runs parallel to the
 		// application at run time - meaning the order of output or execution is now
-		// seperate from the
-		// main application.
+		// separate from the main application.
 		//
-		// We can control how thread operate and their respect to each-other - this is
-		// in-fact hugely important
-		// in getting the most out of our application and available hardware!
+		// We can control how threads operate and their respect to each-other - this is
+		// in-fact hugely important in getting the most out of our application
+		// and available hardware!
 	}
 
 	private static void lifeCycle() throws InterruptedException {
@@ -243,7 +247,13 @@ public class ThreadPractice extends Practice {
 			}
 		}
 		threadMessage(myLoopIterrupt, "State - " + myLoopIterrupt.getState());
-
+		
+		// So far we've looked at some examples of procedural threads, pausing main for the benefit
+		// of expression of the application through a secondary thread before resuming
+		// our main thread.
+		//
+		// In Concurrency there are conditions of control needed to be understood that require control
+		// interactions beyond just joins, let's move onto Concurrency!
 	}
 
 }
