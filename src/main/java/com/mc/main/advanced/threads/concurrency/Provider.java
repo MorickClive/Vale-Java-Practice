@@ -13,20 +13,18 @@ public class Provider implements Runnable {
 	
 	@Override
 	public void run() {
-        String importantInfo[] = {
-                "Mares eat oats",
-                "Does eat oats",
-                "Little lambs eat ivy",
-                "A kid will eat ivy too"
+        String messageList[] = {
+                "Message 1",
+                "Message 2",
+                "Message 3",
+                "Message 4"
             };
             Random random = new Random();
 
-            for (int i = 0;
-                 i < importantInfo.length;
-                 i++) {
-            	exchange.put(importantInfo[i]);
+            for (int x = 0; x < messageList.length; x++) {
+            	exchange.put(messageList[x]);
                 try {
-                    Thread.sleep(random.nextInt(500));
+                	Thread.sleep(random.nextInt(500));
                 } catch (InterruptedException e) {}
             }
             exchange.put("DONE");

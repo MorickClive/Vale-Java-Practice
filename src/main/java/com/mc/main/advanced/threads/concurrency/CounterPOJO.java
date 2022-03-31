@@ -12,13 +12,13 @@ public class CounterPOJO implements Counter<Integer> {
 	}
 	
 	public void increment() {
-		for(int x = 0; x < 5000 ; x++) {
+		for(int x = 0; x < iterations ; x++) {
 			count++;
 		}
 	}
 	
 	public void decrement() {
-		for(int x = 0; x < 5000 ; x++) {
+		for(int x = 0; x < iterations ; x++) {
 			count--;
 		}
 	}
