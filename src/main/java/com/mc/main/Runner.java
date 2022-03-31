@@ -1,5 +1,6 @@
 package com.mc.main;
 
+import com.mc.main.advanced.ConcurrencyPractice;
 import com.mc.main.advanced.ui.scanner.Console;
 import com.mc.main.util.ApplicationTime;
 import com.mc.main.util.StringConst;
