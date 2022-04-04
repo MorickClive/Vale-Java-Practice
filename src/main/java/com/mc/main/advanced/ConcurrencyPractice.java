@@ -112,7 +112,7 @@ public class ConcurrencyPractice extends Practice {
 		
 		factory.join();
 
-		System.out.format("%s\n\n", StringConst.DIV);
+		System.out.format("%s\n", StringConst.DIV);
 	}
 
 	private static void sharedCounter(Counter counter) throws InterruptedException {

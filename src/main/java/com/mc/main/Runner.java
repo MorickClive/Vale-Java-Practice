@@ -1,6 +1,5 @@
 package com.mc.main;
 
-import com.mc.main.advanced.ConcurrencyPractice;
 import com.mc.main.advanced.ui.scanner.Console;
 import com.mc.main.util.ApplicationTime;
 import com.mc.main.util.StringConst;
@@ -43,6 +42,10 @@ public class Runner {
 			ApplicationTime.printElapsedTime();
 		}
 	}
+	
+	// ========================================
+	// Main Runner instructions
+	// ========================================
 	
 	private static final ApplicationTime time = new ApplicationTime();
 
