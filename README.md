@@ -13,7 +13,7 @@ Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Ja
 ### Topics to Cover:
 
 The topics that'll be covered are:
-- [ ] Java Basics:
+- [X] Java Basics:
 	- [X] Variables
 	- [X] Methods
 	- [X] Flow & Control
@@ -23,7 +23,7 @@ The topics that'll be covered are:
 	- [X] Iteration/Loop(for, for-each, while, do-while)
 	- [X] Strings
 	
-- [ ] Object-Oriented Programming 
+- [X] Object-Oriented Programming 
   - [X] Class practices
   - [X] Wrapper classes
   - [X] Object-Oriented Programming Principles:
@@ -34,7 +34,7 @@ The topics that'll be covered are:
    - [X] Enumeration
    - [X] Generics
    
-- [ ] Advanced Java:
+- [X] Advanced Java:
 	- [X] Exceptions: try, try-catch, try-finally
 	- [X] Scanners
 	- [X] Design Patterns
@@ -48,7 +48,7 @@ The topics that'll be covered are:
 			- [X] Observer Pattern
 			- [X] Iterator Pattern
 	- [X] File In/Out
-	- [ ] Annotations
+	- [X] Annotations
 	- [X] Java Pattern/Regular Expression
 	- [X] Threads
 	- [X] Multithreading
@@ -66,7 +66,7 @@ The topics that'll be covered are:
 	- [ ] Static import
 	- [X] Enumeration
 	- [X] AutoBoxing (Wrapper Classes, type inference)
-	- [ ] Annotations
+	- [X] Annotations
 	- [X] Generics
 	
 - [ ] JAVA 7
