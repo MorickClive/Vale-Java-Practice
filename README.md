@@ -8,22 +8,28 @@ java techniques and keywords.
 
 Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Java-Practice/network)
 
+Test Code Coverage: 
+- 96.8%
+
 ## ACTIVE PROJECT PHASE: VALE
 
-### Topics to Cover:
+### Topics to Cover
 
-The topics that'll be covered are:
-- [X] Java Basics:
-	- [X] Variables
-	- [X] Methods
-	- [X] Flow & Control
-	- [X] Arrays
-	- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
-	- [X] Conditionals (if, switch-case, ternary bitwise)
-	- [X] Iteration/Loop(for, for-each, while, do-while)
-	- [X] Strings
+<details><summary>Java Basics</summary>
 	
-- [X] Object-Oriented Programming 
+- [X] Variables
+- [X] Methods
+- [X] Flow & Control
+- [X] Arrays
+- [X] Operations (Incremental, Arithmetic, PEMDAS/BIDMAS, Modulus)
+- [X] Conditionals (if, switch-case, ternary bitwise)
+- [X] Iteration/Loop(for, for-each, while, do-while)
+- [X] Strings
+
+</details>
+
+<details><summary>Object-Oriented Programming</summary>
+	
   - [X] Class practices
   - [X] Wrapper classes
   - [X] Object-Oriented Programming Principles:
@@ -33,34 +39,40 @@ The topics that'll be covered are:
      - [X] Abstraction
    - [X] Enumeration
    - [X] Generics
-   
-- [X] Advanced Java:
-	- [X] Exceptions: try, try-catch, try-finally
-	- [X] Scanners
-	- [X] Design Patterns
-		- [X] Creational
-			- [X] Builder Pattern
-			- [X] Singleton
-		- [X] Structural
-			- [X] Decorator Pattern
-			- [X] Adapter Pattern
-		- [X] Behavioural
-			- [X] Observer Pattern
-			- [X] Iterator Pattern
-	- [X] File In/Out
-	- [X] Annotations
-	- [X] Java Pattern/Regular Expression
-	- [X] Threads
-	- [X] Multithreading
-	- [X] Reflection
 
+</details>
+
+<details><summary>Advanced Java</summary>
+	
+- [X] Exceptions: try, try-catch, try-finally
+- [X] Scanners
+- [X] Design Patterns
+	- [X] Creational
+		- [X] Builder Pattern
+		- [X] Singleton
+	- [X] Structural
+		- [X] Decorator Pattern
+		- [X] Adapter Pattern
+	- [X] Behavioural
+		- [X] Observer Pattern
+		- [X] Iterator Pattern
+- [X] File In/Out
+- [X] Annotations
+- [X] Java Pattern/Regular Expression
+- [X] Threads
+- [X] Multithreading
+- [X] Reflection
+
+</details>
+	
 ---
 
-## Java Version Features
-
-### ACTIVE PROJECT PHASE: VALE
+## Java Version Specifics
 
 - [ ] JAVA 4/5
+
+	<details><summary>expand</summary>
+	
 	- [X] For-Each loops
 	- [X] VarArgs
 	- [ ] Static import
@@ -69,12 +81,22 @@ The topics that'll be covered are:
 	- [X] Annotations
 	- [X] Generics
 	
+	</details>
+
 - [ ] JAVA 7
+
+	<details><summary>expand</summary>
+	
 	- [ ] (String enabled) Switch-Case
 	- [ ] Multi-catch (multi block or type divide '|')
 	- [ ] Type Inference
+
+	</details>
 	
 - [ ] JAVA 8 (Projects: VALE, PASS):
+
+	<details><summary>expand</summary>
+
 	- [ ] Functional Interface
 	- [ ] Streams/Lambdas
 	  - [ ] Collectors
@@ -89,10 +111,12 @@ The topics that'll be covered are:
 	- [ ] Method references
 	- [ ] Default methods
 	- [ ] JDBC
+
+	</details>
 	
 <details> <summary> Java 9 (Projects:STRONGHOLD, BASTION) </summary>
 
-- [ ] Java 9 (Projects:STRONGHOLD, BASTION):
+- [ ] Java 9:
  	- [ ] Private Interface Methods
 	- [ ] Try-With Resources
 	- [ ] Anonymous Classes
@@ -106,14 +130,14 @@ The topics that'll be covered are:
 
 <details> <summary> Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
 
-- [ ] Java 10 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
+- [ ] Java 10:
 	- [ ] Optional .orElseThrow()
 	
 </details>
 
 <details> <summary> Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM) </summary>
 
-- [ ] Java 11 (Projects: HALL, MYTHWRIGHT, AHDASHIM):
+- [ ] Java 11:
 	- [ ] String Methods
 		- [ ] isBlank
 		- [ ] lines
@@ -134,7 +158,10 @@ Additional topics may be incorporated, the repo should follow a developer-branch
    
 ---
 
-Some additional topics might include:
-- [ ] Tasks to complete
-- [X] A basic java-maven application.
-- [X] Unit testing with Junit.
+Some additional topics include:
+- [X] A java-maven application.
+- [X] Unit/Integration testing with Junit.
+
+---
+
+## [Project Vale: Overview](https://github.com/MorickClive/Project-Vale/blob/main/README.md#project-vale)
