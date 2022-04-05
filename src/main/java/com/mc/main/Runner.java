@@ -1,15 +1,12 @@
 package com.mc.main;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import com.mc.main.advanced.ui.scanner.Console;
+import com.mc.main.util.ApplicationTime;
+import com.mc.main.util.StringConst;
 
 // Find FlowControlPractice.java to start!
 public class Runner {
-
+	
 	/**
 	 * <p>
 	 * This project is a refresher of Java coding for `Alan Davies`, comments here
@@ -29,15 +26,31 @@ public class Runner {
 	public static void main(String[] args) {
 		// A simple print function, outputting to console
 		System.out.println("HELLO WORLD");
-
+		
 		// Continued:
-		start();
-
-		System.out.println("Application ENDS");
+		try {
+			start();
+		} finally {
+			// SCANNER close method:
+			// Clean up active resources at end of application
+			// finally allows closure post-exception encounter - ensuring closure in most
+			// if not all error cases
+			Console.close();
+			// Let's return to Console.input()!
+			
+			System.out.println("Application ENDS");
+			ApplicationTime.printElapsedTime();
+		}
 	}
+	
+	// ========================================
+	// Main Runner instructions
+	// ========================================
+	
+	private static final ApplicationTime time = new ApplicationTime();
 
 	protected static void start() {
-		System.out.println("=".repeat(40) + "\n");
+		System.out.println(StringConst.DIV + "\n");
 
 		Application.PROCEDURAL.run();
 		Application.OOP.run();

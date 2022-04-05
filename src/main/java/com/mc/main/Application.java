@@ -1,7 +1,14 @@
 package com.mc.main;
 
+import com.mc.main.advanced.AnnotationPractice;
+import com.mc.main.advanced.ConcurrencyPractice;
 import com.mc.main.advanced.DesignPatternPractice;
 import com.mc.main.advanced.ExceptionPractice;
+import com.mc.main.advanced.IOPractice;
+import com.mc.main.advanced.PatternPractice;
+import com.mc.main.advanced.ReflectionPractice;
+import com.mc.main.advanced.ThreadPractice;
+import com.mc.main.advanced.ui.ScannerPractice;
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
 import com.mc.main.oop.principles.AbstractionPractice;
@@ -18,6 +25,7 @@ import com.mc.main.procedural.MethodPractice;
 import com.mc.main.procedural.OperatorsPractice;
 import com.mc.main.procedural.StringPractice;
 import com.mc.main.procedural.VariablesPractice;
+import com.mc.main.util.StringConst;
 
 /**
 * Provides a series of applications as values
@@ -41,11 +49,8 @@ public enum Application {
 	* which application you would like to run
 	* grouping instruction methods to execute
 	*/
-	public void run() {
-		
-		String div = "=".repeat(40);
-		
-		System.out.println( this.name() + "\n" + div );
+	public void run() {		
+		System.out.println( this.name() + "\n" + StringConst.DIV );
 		
 		switch(this) {
 			case PROCEDURAL:
@@ -73,6 +78,13 @@ public enum Application {
 				EnumerationPractice.start();
 				GenericsPractice.start();
 				DesignPatternPractice.start();
+				ScannerPractice.start();
+				IOPractice.start();
+				ReflectionPractice.start();
+				PatternPractice.start();
+				ThreadPractice.start();
+				ConcurrencyPractice.start();
+				AnnotationPractice.start();
 				break;
 				
 			case JAVA8:
@@ -83,7 +95,7 @@ public enum Application {
 				break;
 		}
 		
-		System.out.println(div + String.format("\nEND of %s\n", this.name()) + div + "\n");
+		System.out.format("%s\nEND of %s\n%s", StringConst.DIV, this.name(), StringConst.DIV + "\n");
 		
 		// View Runner.java, seeing how this code works
 		// Enums will be covered in OOP.
