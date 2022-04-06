@@ -55,7 +55,7 @@ public class Runner {
 		Application.PROCEDURAL.run();
 		Application.OOP.run();
 		Application.ADVANCED.run();
-		// Application.JAVA8.run();
+		Application.JAVA8.run();
 	}
 
 }
