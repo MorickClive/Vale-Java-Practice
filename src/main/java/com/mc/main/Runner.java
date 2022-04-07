@@ -1,6 +1,7 @@
 package com.mc.main;
 
 import com.mc.main.advanced.ui.scanner.Console;
+import com.mc.main.java8.jdbc.DatabaseConnection;
 import com.mc.main.util.ApplicationTime;
 import com.mc.main.util.StringConst;
 
@@ -36,6 +37,7 @@ public class Runner {
 			// finally allows closure post-exception encounter - ensuring closure in most
 			// if not all error cases
 			Console.close();
+			DatabaseConnection.close();
 			// Let's return to Console.input()!
 			
 			System.out.println("Application ENDS");
