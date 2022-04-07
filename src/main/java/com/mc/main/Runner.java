@@ -29,7 +29,7 @@ public class Runner {
 		
 		// Continued:
 		try {
-			start();
+			start(args);
 		} finally {
 			// SCANNER close method:
 			// Clean up active resources at end of application
@@ -46,16 +46,37 @@ public class Runner {
 	// ========================================
 	// Main Runner instructions
 	// ========================================
-	
+
 	private static final ApplicationTime time = new ApplicationTime();
+	private static String paramDebug = "4";
 
-	protected static void start() {
+	protected static void start(String[] args) {
 		System.out.println(StringConst.DIV + "\n");
+		
+		// If app has no parameters, provide param value
+		args = args == null || args.length < 1 ? new String[] {paramDebug} : args;
 
-		Application.PROCEDURAL.run();
-		Application.OOP.run();
-		Application.ADVANCED.run();
-		Application.JAVA8.run();
+		switch(args[0]) {
+			case "1" :
+				Application.PROCEDURAL.run();
+				break;
+			case "2" :
+				Application.OOP.run();
+				break;
+			case "3" :
+				Application.ADVANCED.run();
+				break;
+			case "4" :
+				Application.JAVA8.run();
+				break;
+		
+			default:
+			case "-a" :
+				Application.PROCEDURAL.run();
+				Application.OOP.run();
+				Application.ADVANCED.run();
+				Application.JAVA8.run();
+		}
 	}
 
 }

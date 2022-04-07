@@ -116,10 +116,6 @@ public class StreamsPractice extends Practice {
 		System.out.format("Evens divisible by Three: %s\n", divByThree);
 	}
 	
-	private static void forEach(Collection<?> set) {
-		set.stream().forEach(x -> System.out.format("%s ", x));		
-	}
-	
 	private static void sorted() {
 		ReportFormater.reportHeader("Stream().sorted()");
 		// Let's inverse the evens list, then have streams sort the collection back to ascending order!
