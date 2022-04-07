@@ -9,6 +9,7 @@ import com.mc.main.advanced.PatternPractice;
 import com.mc.main.advanced.ReflectionPractice;
 import com.mc.main.advanced.ThreadPractice;
 import com.mc.main.advanced.ui.ScannerPractice;
+import com.mc.main.java8.FunctInterfacePractice;
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
 import com.mc.main.oop.principles.AbstractionPractice;
@@ -88,6 +89,7 @@ public enum Application {
 				break;
 				
 			case JAVA8:
+				FunctInterfacePractice.start();
 				break;
 				
 			default:

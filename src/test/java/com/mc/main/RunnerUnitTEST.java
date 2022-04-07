@@ -7,9 +7,13 @@ public class RunnerUnitTEST {
 	// in advanced testing you might mock this behaviour or simply test
 	// that the application runs to completion; although this isn't always possible.
 	
+	//TODO: Mock associated class calls.
+	// Additionally, mocking would be required in order to isolate code run by association
+	// as we are only concerned with code that occurs in Runner.main, nothing it calls.
+	
 	@Test
 	public void startTest() {
-		Runner.main(null);
+		Runner.main(new String[]{"-a"});
 	}
 
 }
