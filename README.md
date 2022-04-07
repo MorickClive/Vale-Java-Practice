@@ -8,11 +8,12 @@ java techniques and keywords.
 
 Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Java-Practice/network)
 
+Code Coverage: 96.8%
+
 ## ACTIVE PROJECT PHASE: VALE
 
 ### Topics to Cover:
 
-The topics that'll be covered are:
 - [X] Java Basics:
 	- [X] Variables
 	- [X] Methods
@@ -58,8 +59,6 @@ The topics that'll be covered are:
 
 ## Java Version Features
 
-### ACTIVE PROJECT PHASE: VALE
-
 - [ ] JAVA 4/5
 	- [X] For-Each loops
 	- [X] VarArgs
@@ -75,15 +74,16 @@ The topics that'll be covered are:
 	- [ ] Type Inference
 	
 - [ ] JAVA 8 (Projects: VALE, PASS):
-	- [ ] Functional Interface
-	- [ ] Streams/Lambdas
-	  - [ ] Collectors
-	  - [ ] map
-	  - [ ] filter
-	  - [ ] forEach
-	  - [ ] sorted
-	  - [ ] collect
-	  - [ ] reduce
+	- [X] Functional Interface
+	- [X] Streams/Lambdas
+	  - [x] box
+	  - [X] collect
+	  	- [X] Collectors
+	  - [X] forEach
+	  - [X] map
+	  - [X] filter
+	  - [X] sorted
+	  - [X] reduce
 	- [ ] Date & Time
 	- [ ] Base-64 en/decoding
 	- [ ] Method references
