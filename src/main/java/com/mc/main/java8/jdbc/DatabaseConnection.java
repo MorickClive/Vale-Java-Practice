@@ -19,10 +19,9 @@ public class DatabaseConnection {
 	private static String username;
 	private static String password;
 
-	// For this example, we'll only ever have one connection active at a time
-	// we won't want more than one instance able to connect at a given time.
-	private DatabaseConnection() {
+	public DatabaseConnection(Connection activeConnection) {
 		super();
+		this.activeConnection = activeConnection;
 	}
 	
 	// This will be our means of acquiring a connection instance
@@ -51,7 +50,7 @@ public class DatabaseConnection {
 	//
 	// We can use a mention of the respective resource folder to avoid uploading these resources to
 	// our public repositories.
-	public static void readProperties() throws IOException {
+	private static void readProperties() throws IOException {
 		Properties props = new Properties();
 		InputStream is = DatabaseConnection.class.getClassLoader().getResourceAsStream("db.properties");
 		

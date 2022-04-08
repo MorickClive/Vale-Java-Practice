@@ -51,6 +51,7 @@ public class Runner {
 
 	private static final ApplicationTime time = new ApplicationTime();
 	private static String paramDebug = "4";
+	private static boolean test = false;
 
 	protected static void start(String[] args) {
 		System.out.println(StringConst.DIV + "\n");
@@ -69,7 +70,7 @@ public class Runner {
 				Application.ADVANCED.run();
 				break;
 			case "4" :
-				Application.JAVA8.run();
+				if(!test) { Application.JAVA8.run(); }
 				break;
 		
 			default:
@@ -77,8 +78,12 @@ public class Runner {
 				Application.PROCEDURAL.run();
 				Application.OOP.run();
 				Application.ADVANCED.run();
-				Application.JAVA8.run();
+				if(!test) {Application.JAVA8.run();}
 		}
+	}
+	
+	public static void setTestMode() {
+		test = true;
 	}
 
 }

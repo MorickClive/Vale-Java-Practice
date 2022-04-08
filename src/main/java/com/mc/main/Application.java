@@ -12,6 +12,7 @@ import com.mc.main.advanced.ui.ScannerPractice;
 import com.mc.main.java8.FunctInterfacePractice;
 import com.mc.main.java8.JDBCPractice;
 import com.mc.main.java8.StreamsPractice;
+import com.mc.main.java8.jdbc.DatabaseConnection;
 import com.mc.main.oop.ClassApp;
 import com.mc.main.oop.WrapperClass;
 import com.mc.main.oop.principles.AbstractionPractice;
@@ -93,7 +94,7 @@ public enum Application {
 			case JAVA8:
 				FunctInterfacePractice.start();
 				StreamsPractice.start();
-				JDBCPractice.start();
+				JDBCPractice.start(DatabaseConnection.getConnection());
 				break;
 				
 			default:

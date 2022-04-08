@@ -11,12 +11,14 @@ import com.mc.main.util.Practice;
 import com.mc.main.util.ReportFormater;
 
 public class JDBCPractice extends Practice {
+	
+	private static Connection connection;
 
 	private JDBCPractice() {
 		super();
 	}
 
-	public static void start() {
+	public static void start(Connection connection) {
 		String relativePath = new File("").getAbsolutePath();
 		File JDBCprops = new File(relativePath + "/src/main/resources/db.properties");
 
@@ -33,7 +35,7 @@ public class JDBCPractice extends Practice {
 			//
 			// Let's review our DatabaseConnection class to see how we can manage our connection
 			// Separately from our queries.
-			Connection connection = DatabaseConnection.getConnection();
+
 			
 			// Our Connection allows us to create statements that allow us to execute
 			// SQL queries.
