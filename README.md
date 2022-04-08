@@ -8,7 +8,7 @@ java techniques and keywords.
 
 Checkout the [feature-branch model here!](https://github.com/MorickClive/Vale-Java-Practice/network)
 
-Code Coverage: 96.8%
+Code Coverage: 96.6%
 
 ## ACTIVE PROJECT PHASE: VALE
 
@@ -59,10 +59,10 @@ Code Coverage: 96.8%
 
 ## Java Version Features
 
-- [ ] JAVA 4/5
+- [X] JAVA 4/5
 	- [X] For-Each loops
 	- [X] VarArgs
-	- [ ] Static import
+	- [X] Static import
 	- [X] Enumeration
 	- [X] AutoBoxing (Wrapper Classes, type inference)
 	- [X] Annotations
@@ -88,7 +88,7 @@ Code Coverage: 96.8%
 	- [ ] Base-64 en/decoding
 	- [ ] Method references
 	- [ ] Default methods
-	- [ ] JDBC
+	- [X] JDBC
 	
 <details> <summary> Java 9 (Projects:STRONGHOLD, BASTION) </summary>
 

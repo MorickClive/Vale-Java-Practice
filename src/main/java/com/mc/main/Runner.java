@@ -1,6 +1,7 @@
 package com.mc.main;
 
 import com.mc.main.advanced.ui.scanner.Console;
+import com.mc.main.java8.jdbc.DatabaseConnection;
 import com.mc.main.util.ApplicationTime;
 import com.mc.main.util.StringConst;
 
@@ -36,6 +37,7 @@ public class Runner {
 			// finally allows closure post-exception encounter - ensuring closure in most
 			// if not all error cases
 			Console.close();
+			DatabaseConnection.close();
 			// Let's return to Console.input()!
 			
 			System.out.println("Application ENDS");
@@ -49,6 +51,7 @@ public class Runner {
 
 	private static final ApplicationTime time = new ApplicationTime();
 	private static String paramDebug = "4";
+	private static boolean test = false;
 
 	protected static void start(String[] args) {
 		System.out.println(StringConst.DIV + "\n");
@@ -67,7 +70,7 @@ public class Runner {
 				Application.ADVANCED.run();
 				break;
 			case "4" :
-				Application.JAVA8.run();
+				if(!test) { Application.JAVA8.run(); }
 				break;
 		
 			default:
@@ -75,8 +78,12 @@ public class Runner {
 				Application.PROCEDURAL.run();
 				Application.OOP.run();
 				Application.ADVANCED.run();
-				Application.JAVA8.run();
+				if(!test) {Application.JAVA8.run();}
 		}
+	}
+	
+	public static void setTestMode() {
+		test = true;
 	}
 
 }
